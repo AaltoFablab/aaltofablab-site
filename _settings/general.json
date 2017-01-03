@@ -1,5 +1,6 @@
-{
-  "site_title": "Aalto Fablab",
-  "post_count": 3,
-  "cover": "image"
-}
+---
+site_title: Aalto Fablab
+post_count: '6'
+cover: /img/uploads/stars.jpg
+---
+

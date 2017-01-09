@@ -1,0 +1,51 @@
+/**
+ * Homepage styles
+ */
+
+.homepage--splash-wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.homepage--orbit {
+  width: 600px;
+  height: 600px;
+
+  > svg:nth-child(1) {
+    position: absolute;
+    width: 200px;
+    padding: 200px;
+  }
+}
+
+.homepage--ripple {
+  position: absolute;
+}
+
+.homepage--intro-text {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  line-height: 26px;
+  position: relative;
+  z-index: 1;
+}
+
+.homepage--fullscreen-stars {
+  background-image: url("img/stars.jpg");
+  background-repeat: no-repeat;;
+  background-size: 2000px auto;
+  background-position: center -150px;
+
+  &::before {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.25;
+    z-index: 0;
+  }
+}

@@ -1,10 +1,15 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  <div class="header-wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.data.settings.site_title | escape }}</a>
+    {% if page.layout == 'home' %}
+      <span class="logo logo--amf-header">{% include logos/amf-logo_wht.svg %}</span>
+    {% else %}
+      <svg class="logo--afl-background" height="70" width="70"><circle cx="35" cy="35" r="34" stroke="black" stroke-width="0" fill="black" /></svg>
+      <a href="{{ "/" | relative_url}}"><span class="logo logo--afl-header">{% include logos/aaltofablab-logo.svg %}</span></a>
+    {% endif %}
 
-    <nav class="site-nav">
+    <nav class="site-nav{% if page.nav == 'light' %} site-nav-light{% endif %}">
       <span class="menu-icon">
         <svg viewBox="0 0 18 15" width="18px" height="15px">
           <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
@@ -14,9 +19,10 @@
       </span>
 
       <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {% assign pages = site.pages | sort:'order'  %}
+        {% for p in pages%}
+          {% if p.title %}
+          <a class="page-link{% if p.title == page.title %} page-link-current{% endif %}" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
           {% endif %}
         {% endfor %}
       </div>

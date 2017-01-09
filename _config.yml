@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Aalto
+title: Aalto Fablab
 email: fablab@aalto.fi
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -22,7 +22,11 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:categories/:title.html
 url: "http://aaltofablab-site.netlify.com/" # the base hostname & protocol for your site, e.g. http://example.com
+fablabsio_url:  aaltofablab
+facebook_url: AaltoFablab
 twitter_username: AaltoFablab
+instagram_username: AaltoFablab
+pinterest_url: AaltoFablab
 github_username:  AaltoFablab
 
 # Build settings
@@ -30,6 +34,8 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+include:
+  - _assets/fonts
 exclude:
   - Gemfile
   - Gemfile.lock

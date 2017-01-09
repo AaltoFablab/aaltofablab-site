@@ -1,0 +1,52 @@
+/**
+ * Fonts
+ */
+@font-face {
+  font-family: 'AsapRegular';
+  src: url('fonts/asap/Asap-Regular.eot');
+  src: url('fonts/asap/Asap-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/asap/Asap-Regular.woff2') format('woff2'),
+       url('fonts/asap/Asap-Regular.woff') format('woff'),
+       url('fonts/asap/Asap-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AsapBold';
+  src: url('fonts/asap/Asap-Bold.otf');
+  src: url('fonts/asap/Asap-Bold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/asap/Asap-Bold.woff2') format('woff2'),
+       url('fonts/asap/Asap-Bold.woff') format('woff'),
+       url('fonts/asap/Asap-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AsapItalic';
+  src: url('fonts/asap/Asap-Italic.otf');
+  src: url('fonts/asap/Asap-Italic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/asap/Asap-Italic.woff2') format('woff2'),
+       url('fonts/asap/Asap-Italic.woff') format('woff'),
+       url('fonts/asap/Asap-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AsapBoldItalic';
+  src: url('fonts/asap/Asap-BoldItalic.otf');
+  src: url('fonts/asap/Asap-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/asap/Asap-BoldItalic.woff2') format('woff2'),
+       url('fonts/asap/Asap-BoldItalic.woff') format('woff'),
+       url('fonts/asap/Asap-BoldItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$base-font-family: "AsapRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.bold {
+  font-family: "AsapBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

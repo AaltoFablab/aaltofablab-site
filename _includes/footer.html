@@ -1,0 +1,50 @@
+<footer class="site-footer">
+
+  <div class="footer-wrapper">
+
+    <div class="footer-logo">
+      <!--Aalto Studios/-->
+      <a href="http://studios.aalto.fi/" target="_blank"><span class="logo logo--amf-footer">{% include logos/amf-logo.svg %}</span></a>
+    </div>
+
+    <div class="footer-social">
+      {% if site.fablabsio_url %}
+      <li>
+        {% include social-icons/icon-fablabsio.html url=site.fablabsio_url %}
+      </li>
+      {% endif %}
+
+      {% if site.facebook_url %}
+      <li>
+        {% include social-icons/icon-facebook.html url=site.facebook_url %}
+      </li>
+      {% endif %}
+
+      {% if site.twitter_username %}
+      <li>
+        {% include social-icons/icon-twitter.html username=site.twitter_username %}
+      </li>
+      {% endif %}
+
+      {% if site.instagram_username %}
+      <li>
+        {% include social-icons/icon-instagram.html username=site.instagram_username %}
+      </li>
+      {% endif %}
+
+      {% if site.pinterest_url %}
+      <li>
+        {% include social-icons/icon-pinterest.html url=site.pinterest_url %}
+      </li>
+      {% endif %}
+
+      {% if site.github_username %}
+      <li>
+        {% include social-icons/icon-github.html username=site.github_username %}
+      </li>
+      {% endif %}
+    </div>
+
+  </div>
+
+</footer>

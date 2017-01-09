@@ -1,0 +1,303 @@
+/**
+ * Site header
+ */
+.site-header {
+  font-family: $base-font-family;
+  // Positioning context for the mobile navigation icon
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+
+.header-wrapper {
+  height: 60px;
+  padding: $spacing-unit 50px 30px $spacing-unit;
+}
+
+.site-title {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 56px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.logo--afl-header {
+  > svg {
+    position: absolute;
+    width: 70px;
+    padding: 0;
+  }
+}
+
+.logo--afl-background {
+  position: absolute;
+}
+
+.logo--amf-header {
+  > svg {
+    color: #fff;
+    position: absolute;
+    width: 60px;
+    padding: 0;
+  }
+}
+
+.site-nav {
+  font-size: 13px;
+  float: right;
+  line-height: 56px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $text-color;
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: inherit;
+    line-height: $base-line-height;
+    padding-top:3px;
+    padding-bottom:3px;
+
+    // Spaces between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      border-bottom: 3px solid black;
+    }
+
+    &-current {
+      font-family: 'AsapBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      border-bottom: 3px solid black;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg path {
+        fill: $grey-color-dark;
+      }
+    }
+
+    .trigger {
+      clear: both;
+      display: none;
+    }
+
+    &:hover .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      margin-left: 20px;
+    }
+  }
+}
+
+.site-nav-light {
+  color: #fff !important;
+
+  .page-link {
+    &:hover {
+      text-decoration: none;
+      border-bottom: 3px solid white;
+    }
+
+    &-current {
+      border-bottom: 3px solid white;
+    }
+  }
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  background-color: #fff;
+  position: absolute;
+  z-index: 99;
+  width:100%;
+}
+
+.footer-wrapper {
+  padding: 0 $spacing-unit 0 10px;
+}
+
+.footer-logo {
+  float: left;
+}
+
+.logo--amf-footer svg {
+  height: 124px;
+}
+
+.footer-social {
+  float:right;
+  list-style: none;
+  margin-left: 0;
+  display: inline-block;
+  padding:50px 0;
+
+  > li {
+    float: left;
+    width: 24px;
+    height: 24px;
+    animation-name: drop;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &:hover {
+      animation-name: raise;
+      animation-duration: 0.3s;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes raise {
+    from {
+      margin-top: 0;
+      padding-bottom: 0;
+    }
+    to {
+      margin-top: -4px;
+      padding-bottom: 4px;
+    }
+}
+
+@keyframes drop {
+    from {
+      margin-top: -4px;
+      padding-bottom: 4px;
+    }
+    to {
+      margin-top: 0;
+      padding-bottom: 0;
+    }
+}
+
+
+/**
+ * Page content
+ */
+.page-content {
+  font-family: $base-font-family;
+  min-height: 100%;
+  padding: 0;
+}
+
+.page-heading {
+  font-size: 20px;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
+}
+
+.fullscreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  h2 {
+    font-size: 32px;
+
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+
+  h4 {
+    font-size: 20px;
+
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}

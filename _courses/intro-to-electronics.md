@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Intro to Electronics"
-date:   2017-01-19 00:00:00 +0000
+title: Intro to Electronics
+date: '2017-01-19 00:00:00 +0000'
 categories:
-- courses
-- electronics
+  - courses
+  - electronics
+icon: /img/uploads/electronics-intro-icon.svg
 ---
 
 Get started with programmable electronics using Arduino.

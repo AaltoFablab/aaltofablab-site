@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="fullscreen courses--fullscreen">
+</div>
+
+<div class="content--wrapper">
+{% assign courses = site.courses | where: 'categories', 'courses' | sort: 'date'  %}
+{% for course in courses %}
+
+  <div class="course--wrapper">
+    <div class="course--image">
+    </div>
+    <div class="course--content">
+      <div class="course--content-title">{{ course.title | escape }}</div>
+      <div class="course--content-hook"><p>{{ course.excerpt }}</p></div>
+    </div>
+  </div>
+
+{% endfor %}
+</div>

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="fullscreen events--fullscreen">
+</div>
+
+<div class="content--wrapper">
+{% assign events = site.events | where: 'categories', 'events' | sort: 'date'  %}
+{% for event in events %}
+
+  <div class="event--wrapper">
+    <div class="event--date">
+      <div class="event--date-tile">
+        <div class="tile--month">{{ event.date | date: "%b"  }}</div>
+        <div class="tile--day">{{ event.date | date: "%d"  }}</div>
+      </div>
+      <div class="event--date-link">View</div>
+    </div>
+    <div class="event--content">
+      <div class="event--content-title">{{ event.title | escape }}</div>
+      <div class="event--content-date">{{ event.date | date: "%a %d %B"  }}&nbsp;&nbsp;|&nbsp;&nbsp;{{ event.startTime }}&nbsp;&nbsp;—&nbsp;&nbsp;{{ event.endTime }}</div>
+      <div class="event--content-hook"><p>{{ event.excerpt }}</p></div>
+      <div class="event--content-tags">{{ event.tags | join: "&nbsp;&nbsp;&nbsp;&nbsp;" }}</div>
+    </div>
+  </div>
+
+{% endfor %}
+</div>

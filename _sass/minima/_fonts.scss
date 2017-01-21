@@ -50,3 +50,8 @@ $base-font-family: "AsapRegular", "Helvetica Neue", Helvetica, Arial, sans-serif
 .bold {
   font-family: "AsapBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+@mixin bold-font($fontSize) {
+  font-family: "AsapBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $fontSize;
+}

@@ -5,7 +5,13 @@ date: '2017-01-19 00:00:00 +0000'
 categories:
   - courses
   - cad
+tags:
+  - "#Fusion360"
+  - "#3D-Modelling"
+  - "#CAD/CAM"
+  - "#Intro"
 icon: /img/uploads/fusion-intro-icon.svg
 ---
+Get started with Autodesk's powerful CAD/CAM package.
 
-Get started with Autodesk's powerful CAD/CAM package which is available for free to all Fab Labs, startups and enthusiasts.
+Autodesk Fusion 360 is freely available to all Fab Labs, startups and enthusiasts.

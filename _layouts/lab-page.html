@@ -3,4 +3,112 @@ layout: default
 ---
 
 <div class="fullscreen lab--fullscreen">
+  <div class="machine--icons-wrapper">
+    <a href="#3d-printers"><div class="machine--icon"><img src="/assets/img/icons/machines/3d-printers.svg" /><p>3D-Printers</p></div></a>
+    <a href="#cutting-machines"><div class="machine--icon"><img src="/assets/img/icons/machines/cutting-machines.svg" />Cutting Machines</div></a>
+    <a href="#cnc-machines"><div class="machine--icon"><img src="/assets/img/icons/machines/cnc-machines.svg" />CNC Machines</div></a>
+    <a href="#electronics"><div class="machine--icon"><img src="/assets/img/icons/machines/electronics.svg" />Electronics</div></a>
+    <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/hand-tools.svg" />Hand Tools</div></a>
+    <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/cad-stations.svg" />CAD Stations</div></a>
+    <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/assembly-space.svg" />Assembly Space</div></a>
+    <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/material-supplies.svg" />Material Supplies</div></a>
+  </div>
 </div>
+
+<div class="content--wrapper-lab">
+  <div id="3d-printers" class="machine--group three-d-printers">
+    <div class="machine--group-heading">3D Printers</div>
+
+    {% assign 3Dprinters = site.machines | where: 'categories', 'machines' | where: 'categories', '3d-printer'  %}
+    {% for machine in 3Dprinters %}
+    <div class="machine--wrapper three-col">
+      <div class="machine--image" style="background-image:url({{ machine.image }})"></div>
+
+      <div class="machine--content">
+        <div class="machine--content-title">{{ machine.name | escape }}</div>
+        <div class="machine--content-hook">{{ machine.excerpt }}</div>
+      </div>
+    </div>
+  {% endfor %}
+  </div><!-- machine--group /-->
+
+  <div id="cutting-machines" class="machine--group cutting-machines">
+      <div class="machine--group-heading">Cutting Machines</div>
+
+    {% assign cuttingMachines = site.machines | where: 'categories', 'machines' | where: 'categories', 'cutting-machine'  %}
+    {% for machine in cuttingMachines %}
+    <div class="machine--wrapper three-col">
+      <div class="machine--image" style="background-image:url({{ machine.image }})"></div>
+
+      <div class="machine--content">
+        <div class="machine--content-title">{{ machine.name | escape }}</div>
+        <div class="machine--content-hook">{{ machine.excerpt }}</div>
+      </div>
+    </div>
+  {% endfor %}
+  </div><!-- machine--group /-->
+
+  <div id="cnc-machines" class="machine--group cnc-machines">
+    <div class="machine--group-heading">CNC Machines</div>
+
+    {% assign cncMachines = site.machines | where: 'categories', 'machines' | where: 'categories', 'cnc'  %}
+    {% for machine in cncMachines %}
+    <div class="machine--wrapper three-col">
+      <div class="machine--image" style="background-image:url({{ machine.image }})"></div>
+
+      <div class="machine--content">
+        <div class="machine--content-title">{{ machine.name | escape }}</div>
+        <div class="machine--content-hook">{{ machine.excerpt }}</div>
+      </div>
+    </div>
+  {% endfor %}
+  </div><!-- machine--group /-->
+
+  <div id="electronics" class="machine--group electronics">
+    <div class="machine--group-heading">Electronics</div>
+
+    {% assign electronics = site.machines | where: 'categories', 'machines' | where: 'categories', 'electronics'  %}
+    {% for machine in electronics %}
+    <div class="machine--wrapper three-col">
+      <div class="machine--image" style="background-image:url({{ machine.image }})"></div>
+
+      <div class="machine--content">
+        <div class="machine--content-title">{{ machine.name | escape }}</div>
+        <div class="machine--content-hook">{{ machine.excerpt }}</div>
+      </div>
+    </div>
+  {% endfor %}
+  </div><!-- machine--group /-->
+
+  <div id="scanning-devices" class="machine--group scanning-devices">
+    <div class="machine--group-heading">Scanning Devices</div>
+
+    {% assign scanners = site.machines | where: 'categories', 'machines' | where: 'categories', 'scanning-devices'  %}
+    {% for machine in scanners %}
+    <div class="machine--wrapper three-col">
+      <div class="machine--image" style="background-image:url({{ machine.image }})"></div>
+
+      <div class="machine--content">
+        <div class="machine--content-title">{{ machine.name | escape }}</div>
+        <div class="machine--content-hook">{{ machine.excerpt }}</div>
+      </div>
+    </div>
+  {% endfor %}
+  </div><!-- machine--group /-->
+
+  <div id="misc" class="machine--group misc">
+    <div class="machine--group-heading">Misc</div>
+
+    {% assign misc = site.machines | where: 'categories', 'machines' | where: 'categories', 'misc'  %}
+    {% for machine in misc %}
+    <div class="machine--wrapper three-col">
+      <div class="machine--image" style="background-image:url({{ machine.image }})"></div>
+
+      <div class="machine--content">
+        <div class="machine--content-title">{{ machine.name | escape }}</div>
+        <div class="machine--content-hook">{{ machine.excerpt }}</div>
+      </div>
+    </div>
+  {% endfor %}
+  </div><!-- machine--group /-->
+</div> <!-- content--wrapper /-->

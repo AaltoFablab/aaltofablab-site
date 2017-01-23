@@ -266,6 +266,39 @@
 /**
  * Posts
  */
+
+.one-col {
+  width: 100%;
+}
+
+.two-col {
+  width: 50%;
+
+  &:nth-child(2n + 1) {
+    border-left: none;
+  }
+
+  &:nth-child(2n + 0) {
+    border-right: none;
+  }
+}
+
+.three-col {
+  width: 33.33333%;
+
+  &:nth-child(3n + 1) {
+    border-left: none;
+  }
+
+  &:nth-child(3n + 0) {
+    border-right: none;
+  }
+}
+
+.four-col {
+  width: 25%;
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }

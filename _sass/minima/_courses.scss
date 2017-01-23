@@ -2,7 +2,6 @@
  * Courses Page styles
  */
 .courses--fullscreen {
-  background-color: #5BFDD1 !important;
   overflow: hidden;
   position: relative;
 
@@ -50,10 +49,16 @@
   }
 }
 
+.course--image {
+  width: 140px;
+  position: absolute;
+}
+
 .course--content {
   position: relative;
-  padding-left:150px;
+  padding-left:180px;
   font-size: 10pt;
+  min-height: 100px;
 
   &-title {
     @include bold-font(18pt);
@@ -67,5 +72,26 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     line-height: 1.8;
+  }
+
+  &-link {
+    @include bold-font(10pt);
+    letter-spacing: 0.1em;
+    border: 2px solid black;
+    padding: 4px 8px;
+    text-align: center;
+    margin-top: 4px;
+    margin-right:16px;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  &-tags {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.4;
+    margin-top:20px;
   }
 }

@@ -6,5 +6,48 @@ The code is open source under the [MIT License](https://github.com/AaltoFablab/a
 ## Site Configuration
 The site is a static site built using [Jekyll](https://jekyllrb.com), deployed with [Netlify](https://www.netlify.com), using [Netlify CMS](https://github.com/netlify/netlify-cms) for static site content authoring.
 
+## Collections
+
+Content displayed on the **"Share"** page is pulled from the standard **_posts** collection and organised using categories.
+
+### Post Categories
+- madeinfablab
+- howto
+- fabacademy
+
+All other content is organised by custom collections, located in **source/\_<collection>** directories, with subcategories.
+
+### Collections
+
+| machines             | events | courses | faqs | news |
+| -------------------- | ------ | ------- | ---- | ---- |
+| 3d-printer           | | | | |
+| _sla_                | | | | |
+| _fdm_                | | | | |
+| _dual-extruder_      | | | | |
+| cutting-machine      | | | | |
+| _lasercutter_        | | | | |
+| cnc                  | | | | |
+| _3-axis_             | | | | |
+| _4-axis_             | | | | |
+| electronics          | | | | |
+| _facilities_         | | | | |
+| _prototyping-boards_ | | | | |
+| scanning-devices     | | | | |
+| _3d-scanner_         | | | | |
+| misc                 | | | | |
+
+## Image Assets
+
+Images referenced in posts are held in the **img/uploads** folder.
+
+| Collection         | Format       | Resolution     | Naming Convention    |
+| ------------------ | ------------ | -------------- | -------------------- |
+| Machines           | JPG          | 800 x 600      | lowercase-dashed.jpg |
+| Events             | JPG          | 1280 x 800     | lowercase-dashed.jpg |
+| Courses            | SVG          | (1:1) AR       | lowercase-dashed-<icon>.jpg |
+
+---
+
 ### Credits
 Site design and code by [Charlie Banthorpe](http://www.banthorpe.co)

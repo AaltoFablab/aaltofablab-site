@@ -21,7 +21,7 @@ layout: default
       <div class="event--content-title">{{ event.title | escape }}</div>
       <div class="event--content-date">{{ event.date | date: "%a %d %B"  }}&nbsp;&nbsp;|&nbsp;&nbsp;{{ event.startTime }}&nbsp;&nbsp;—&nbsp;&nbsp;{{ event.endTime }}</div>
       <div class="event--content-hook"><p>{{ event.excerpt }}</p></div>
-      <div class="event--content-tags">{{ event.tags | join: "&nbsp;&nbsp;&nbsp;&nbsp;" }}</div>
+      <div class="event--content-tags">{{ event.tags | join: "&nbsp;&nbsp;&nbsp;" }}</div>
     </div>
   </div>
 

@@ -7,6 +7,7 @@ categories:
 - public
 startTime: "10:00"
 endTime: "19:00"
+facebookEvent: "https://www.facebook.com/events/884062625064521/"
 tags:
   - "@AaltoFablab"
   - "#madeinfablab"

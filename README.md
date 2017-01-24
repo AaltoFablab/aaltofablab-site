@@ -44,8 +44,9 @@ Images referenced in posts are held in the **img/uploads** folder.
 | Collection         | Format       | Resolution     | Naming Convention    |
 | ------------------ | ------------ | -------------- | -------------------- |
 | Machines           | JPG          | 800 x 600      | lowercase-dashed.jpg |
-| Events             | JPG          | 1280 x 800     | lowercase-dashed.jpg |
-| Courses            | SVG          | (1:1) AR       | lowercase-dashed-<icon>.jpg |
+| Events             | JPG          | 1024 x 768     | lowercase-dashed.jpg |
+| Courses            | SVG          | (1:1) AR       | lowercase-dashed-<icon>.svg |
+| Share              | JPG / GIF    | 1024 x 768     | lowercase-dashed.<extension> |
 
 ---
 

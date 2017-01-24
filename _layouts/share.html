@@ -2,12 +2,44 @@
 layout: default
 ---
 
+{% assign madeInFablab = site.posts | where: 'categories', 'madeinfablab' %}
+
 <div class="fullscreen share--fullscreen">
+  <div class="fullscreen--feature-controls">
+    <div class="fullscreen--scroll-arrow fullscreen--scroll-arrowLeft" onclick="scrollToLeft();"></div>
+    <div class="fullscreen--scroll-arrow fullscreen--scroll-arrowRight" onclick="scrollToRight();"></div>
+  </div>
+
+  <div id="featureScroller" class="fullscreen--feature-scroller">
+    {% for p in madeInFablab limit:3 %}
+    <div class="fullscreen--feature-wrapper">
+      <div class="fullscreen--feature">
+        <div class="fullscreen--feature-img" style="background-image:url({{ p.coverImage }})"></div>
+
+        <div class="fullscreen--feature-content">
+          <div class="fullscreen--feature-prefix">
+            {{ p.pre-title }}
+          </div>
+          <div class="fullscreen--feature-title">
+            {{ p.title }}
+          </div>
+          <div class="fullscreen--feature-subtitle">
+            By {{ p.by }}
+          </div>
+          <a href="{{ p.permalink }}"><div class="fullscreen--feature-link">Read the Article</div></a>
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
 
 <div class="content--wrapper-share">
-  <div class="content--share-category madeinfablab">
-  {% assign madeInFablab = site.posts | where: 'categories', 'madeinfablab' %}
+  <div class="content--share-category">
+    <div class="share--category-heading">
+      <a class="shadow madeinfablab"># made in fablab</a>
+    </div>
   {% for p in madeInFablab %}
     <div class="post--wrapper three-col post--wrapper-madeinfablab">
       <div class="post--image" style="background-image:url({{ p.coverImage }})"></div>
@@ -20,9 +52,12 @@ layout: default
   {% endfor %}
   </div><!-- content--share-category /-->
 
-  <div class="content--share-category howto">
-  {% assign howTo = site.posts | where: 'categories', 'howto' %}
-  {% for p in howTo %}
+  <div class="content--share-category">
+    <<div class="share--category-heading">
+      <a class="shadow howto">How-To Guides</a>
+    </div>
+    {% assign howTo = site.posts | where: 'categories', 'howto' %}
+    {% for p in howTo %}
     <div class="post--wrapper two-col post--wrapper-howto">
       <div class="post--image" style="background-image:url({{ p.coverImage }})">
         <div class="post--image-tag"># how to</div>
@@ -37,9 +72,12 @@ layout: default
   {% endfor %}
   </div><!-- content--share-category /-->
 
-  <div class="content--share-category fabacademy">
-  {% assign fabAcademy = site.posts | where: 'categories', 'fabacademy' %}
-  {% for p in fabAcademy %}
+  <div class="content--share-category">
+    <div class="share--category-heading">
+      <a class="shadow fabacademy">Fab Academy</a>
+    </div>
+    {% assign fabAcademy = site.posts | where: 'categories', 'fabacademy' %}
+    {% for p in fabAcademy %}
     <div class="post--wrapper three-col post--wrapper-fabacademy">
       <div class="post--image" style="background-image:url({{ p.coverImage }})"></div>
 

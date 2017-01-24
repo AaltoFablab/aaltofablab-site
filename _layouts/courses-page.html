@@ -3,6 +3,17 @@ layout: default
 ---
 
 <div class="fullscreen courses--fullscreen">
+  {% assign features = site.courses | where: 'categories', 'courses' | where: 'categories', 'feature' | sort: 'date'  %}
+  <div class="courses--feature-wrapper">
+    <div class="courses--feature-prefix">#FabAcademy</div>
+    <div class="courses--feature-title">
+      Fab Academy 2017
+    </div>
+    <div class="courses--feature-subtitle">
+      Applications &amp; Implications of Digital Fabrication
+    </div>
+    <a href="http://fabacademy.org/" target="_blank"><div class="events--feature-link">FabAcademy.org</div></a>
+  </div>
 </div>
 
 <div class="content--wrapper">

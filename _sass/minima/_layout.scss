@@ -224,6 +224,7 @@
 .page-content {
   font-family: $base-font-family;
   padding: 0;
+  overflow: hidden;
 }
 
 .page-heading {
@@ -297,6 +298,18 @@
 
 .four-col {
   width: 25%;
+}
+
+.content--final {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #e8e8e8;
+  padding: 120px 0 120px 0;
+
+  &-icon {
+    width: 60px;
+    margin: 0 auto 40px auto;
+  }
 }
 
 .post-header {

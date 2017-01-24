@@ -36,6 +36,49 @@
   }
 }
 
+.courses--feature {
+  &-wrapper {
+    position: relative;
+    height: 250px;
+    top: 50%;
+    left: 0;
+    padding: 0 60px;
+    margin-top: -80px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &-prefix {
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+  }
+
+  &-title {
+    @include bold-font(28pt);
+    letter-spacing: 0.2em;
+  }
+
+  &-subtitle {
+    letter-spacing: 0.2em;
+    margin-top: 10px;
+  }
+
+  &-link {
+    letter-spacing: 0.2em;
+    margin-top: 80px;
+    border: 2px solid white;
+    padding: 4px 32px 6px 32px;
+    @include bold-font(10pt);
+    display: inline-block;
+  }
+}
+
 .course--wrapper {
   z-index: 1;
   padding: 60px 0;

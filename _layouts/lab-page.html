@@ -7,10 +7,10 @@ layout: default
     <a href="#3d-printers"><div class="machine--icon"><img src="/assets/img/icons/machines/3d-printers.svg" /><p>3D-Printers</p></div></a>
     <a href="#cutting-machines"><div class="machine--icon"><img src="/assets/img/icons/machines/cutting-machines.svg" />Cutting Machines</div></a>
     <a href="#cnc-machines"><div class="machine--icon"><img src="/assets/img/icons/machines/cnc-machines.svg" />CNC Machines</div></a>
+    <a href="#scanning-devices"><div class="machine--icon"><img src="/assets/img/icons/machines/scanning-devices.svg" />3D-Scanners</div></a>
     <a href="#electronics"><div class="machine--icon"><img src="/assets/img/icons/machines/electronics.svg" />Electronics</div></a>
     <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/hand-tools.svg" />Hand Tools</div></a>
     <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/cad-stations.svg" />CAD Stations</div></a>
-    <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/assembly-space.svg" />Assembly Space</div></a>
     <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/material-supplies.svg" />Material Supplies</div></a>
   </div>
 </div>
@@ -64,11 +64,11 @@ layout: default
   {% endfor %}
   </div><!-- machine--group /-->
 
-  <div id="electronics" class="machine--group electronics">
-    <div class="machine--group-heading">Electronics</div>
+  <div id="scanning-devices" class="machine--group scanning-devices">
+    <div class="machine--group-heading">Scanning Devices</div>
 
-    {% assign electronics = site.machines | where: 'categories', 'machines' | where: 'categories', 'electronics'  %}
-    {% for machine in electronics %}
+    {% assign scanners = site.machines | where: 'categories', 'machines' | where: 'categories', 'scanning-devices'  %}
+    {% for machine in scanners %}
     <div class="machine--wrapper three-col">
       <div class="machine--image" style="background-image:url({{ machine.image }})"></div>
 
@@ -80,11 +80,11 @@ layout: default
   {% endfor %}
   </div><!-- machine--group /-->
 
-  <div id="scanning-devices" class="machine--group scanning-devices">
-    <div class="machine--group-heading">Scanning Devices</div>
+  <div id="electronics" class="machine--group electronics">
+    <div class="machine--group-heading">Electronics</div>
 
-    {% assign scanners = site.machines | where: 'categories', 'machines' | where: 'categories', 'scanning-devices'  %}
-    {% for machine in scanners %}
+    {% assign electronics = site.machines | where: 'categories', 'machines' | where: 'categories', 'electronics'  %}
+    {% for machine in electronics %}
     <div class="machine--wrapper three-col">
       <div class="machine--image" style="background-image:url({{ machine.image }})"></div>
 

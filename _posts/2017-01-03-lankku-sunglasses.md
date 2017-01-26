@@ -9,4 +9,9 @@ categories:
 coverImage: /img/uploads/lankku-sunglasses.jpg
 ---
 
-THIS PROJECT WAS COMPLETED AT THE FABLAB AND IS A GREAT EXAMPLE OF WHAT CAN BE ACHIEVED BY COMBINING MULTIPLE DIGITAL FABRICATION TECHNIQUES.
+Lankku Sunglasses are made from upcycled broken skateboard decks, giving each pair beautifully unique colour bands running through them. Blanks of prepared skateboard ply are lasercut to the rough form, before a lot of hand shaping!
+
+Links
+-----
+
+[Lankku Shop](http://lankkushop.fi/){:target="_blank"}

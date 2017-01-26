@@ -9,4 +9,9 @@ categories:
 coverImage: /img/uploads/buoy-studio-smoo.jpg
 ---
 
-THIS PROJECT WAS COMPLETED AT THE FABLAB AND IS A GREAT EXAMPLE OF WHAT CAN BE ACHIEVED BY COMBINING MULTIPLE DIGITAL FABRICATION TECHNIQUES.
+Poiju (Buoy) is a standing butter knife, handmade from ceramics. Designer Marianne Huotari used SLA 3D-printing to prototype the form, before hand-finishing and creating a ceramic mould.
+
+Links
+-----
+
+[Studio Smoo](http://studiosmoo.com/poiju/){:target="_blank"}

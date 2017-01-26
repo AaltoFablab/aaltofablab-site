@@ -13,4 +13,4 @@ tags:
   - "#madeinfablab"
 ---
 
-Come and help us break-in our new Lab at the Harold Herlin Learning Centre with weekend workshops organized by Käsityökoulu Robotti and others. Everyone welcome!
+Come and help us break-in our new Lab at the Harald Herlin Learning Centre with weekend workshops organized by Käsityökoulu Robotti and others. Everyone welcome!

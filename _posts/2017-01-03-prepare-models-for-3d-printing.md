@@ -8,4 +8,4 @@ categories:
 coverImage: /img/uploads/prepare-models-for-3d-printing.jpg
 ---
 
-We've written a guide to help you through the 3D-Printing process. From choosing the correct type of printer for your job, to preparing your 3D model, to post-print clean up. We've got you covered!
+We've written a guide to help you through the 3D-Printing process. From choosing the correct type of printer for the job, to preparing your 3D model, to post-print clean up. We've got you covered!

@@ -7,4 +7,4 @@ categories:
 coverImage: /img/uploads/machines-making-machines.gif
 ---
 
-Applications for Fab Academy 2017 are now open! Join the course that teaches you "how to make (almost) anything" from start to finish using digital fabrication and programmable electronics.
+It's machine building time at Fab Academy! We've been experimenting with stepper-motors and control nodes to create a wall-mounted harmonograph.

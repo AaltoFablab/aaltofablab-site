@@ -12,6 +12,5 @@ tags:
   - "#Intro"
 icon: /img/uploads/fusion-intro-icon.svg
 ---
-Get started with Autodesk's powerful CAD/CAM package.
 
-Autodesk Fusion 360 is freely available to all Fab Labs, startups and enthusiasts.
+Get started with Autodesk's powerful CAD/CAM package. Autodesk Fusion 360 is freely available to all Fab Labs, startups and enthusiasts and has amazing solid modeling, mesh modeling and CAM capabilities, making it our weapon of choice for many applications!

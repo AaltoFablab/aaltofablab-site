@@ -16,4 +16,77 @@ layout: default
       digital fabrication lab
     </div>
   </div>
+  <a href="#news" class="fullscreen--scroll-arrowDown"></a>
+</div>
+
+<div id="news" class="content--wrapper-home">
+
+  <div class="home--news-content-wrapper">
+    <div class="home--news-wrapper">
+      <div class="home--news-heading">News</div>
+      <div class="home--news-content">
+      {% assign news = site.news | where: 'categories', 'news' | sort: 'date' | reverse %}
+      {% for item in news limit:3%}
+      <div class="home--news-item">
+        <div class="home--news-date">News&nbsp;&nbsp;|&nbsp;&nbsp;{{ item.date | date: "%d.%m.%Y" }}</div>
+        <div class="home--news-title">{{ item.title | escape }}</div>
+        <div class="home--news-hook">{{ item.excerpt }}</div>
+      </div>
+      {% endfor %}
+      </div>
+      <div class="home--news-more">More News</div>
+    </div>
+
+    <div class="home--events-wrapper">
+      <div class="home--events-heading"><a href="/events">Events</a></div>
+      <div class="home--events-content">
+      {% assign events = site.events | where: 'categories', 'events' | sort: 'date' %}
+      {% for event in events limit:3 %}
+      <div class="home--events-item">
+        <div class="home--events-tile">
+          <div class="tile--month">{{ event.date | date: "%b"  }}</div>
+          <div class="tile--day">{{ event.date | date: "%d"  }}</div>
+        </div>
+        <div class="home--events-title">{{ event.title | escape }}</div>
+        <div class="home--events-date">{{ event.date | date: "%a %d %B"  }}&nbsp;&nbsp;|&nbsp;&nbsp;{{ event.startTime }}&nbsp;&nbsp;—&nbsp;&nbsp;{{ event.endTime }}</div>
+      </div>
+      {% endfor %}
+      </div>
+    </div>
+
+    <div class="home--courses-wrapper">
+      <div class="home--courses-heading"><a href="/courses">Courses</a></div>
+      <div class="home--courses-content">
+      {% assign courses = site.courses | where: 'categories', 'courses' | sort: 'date' %}
+      {% for course in courses limit:3 %}
+      <div class="home--courses-item">
+        <div class="home--courses-icon">
+          <img src="{{ course.icon }}" />
+        </div>
+        <div class="home--courses-title">{{ course.title | escape }}</div>
+        <div class="home--courses-tags">{{ course.tags | join: "&nbsp;&nbsp;" }}</div>
+      </div>
+      {% endfor %}
+      </div>
+    </div>
+
+  </div><!-- content--wrapper-home /-->
+
+  <div class="home--machines-wrapper">
+    <div class="home--machines-heading">Equipment</div>
+
+    <div class="home--machines-subheading">
+      Aalto Fablab is fully equipped with Digital Fabrication tools for rapid prototyping, personal manufacturing and much much more
+    </div>
+
+    <a href="/lab#3d-printers"><div class="machine--icon"><img src="/assets/img/icons/machines/3d-printers.svg" /><p>3D-Printers</p></div></a>
+    <a href="/lab#cutting-machines"><div class="machine--icon"><img src="/assets/img/icons/machines/cutting-machines.svg" />Cutting Machines</div></a>
+    <a href="/lab#cnc-machines"><div class="machine--icon"><img src="/assets/img/icons/machines/cnc-machines.svg" />CNC Machines</div></a>
+    <a href="/lab#scanning-devices"><div class="machine--icon"><img src="/assets/img/icons/machines/scanning-devices.svg" />3D-Scanners</div></a>
+    <a href="/lab#electronics"><div class="machine--icon"><img src="/assets/img/icons/machines/electronics.svg" />Electronics</div></a>
+
+    <div class="home--machines-link">
+      <a href="/lab" class="shadow">Discover More</a>
+    </div>
+  </div>
 </div>

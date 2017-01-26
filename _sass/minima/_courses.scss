@@ -80,6 +80,7 @@
 }
 
 .course--wrapper {
+  position: relative;
   z-index: 1;
   padding: 60px 0;
 
@@ -93,29 +94,10 @@
 }
 
 .course--image {
-  width: 140px;
   position: absolute;
-}
-
-.course--content {
-  position: relative;
-  padding-left:180px;
-  font-size: 10pt;
-  min-height: 100px;
-
-  &-title {
-    @include bold-font(18pt);
-    color: $header-text-color;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-  }
-
-  &-hook {
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    line-height: 1.8;
-  }
+  width: 140px;
+  margin-right: -180px;
+  text-align: center;
 
   &-link {
     @include bold-font(10pt);
@@ -123,11 +105,40 @@
     border: 2px solid black;
     padding: 4px 8px;
     text-align: center;
-    margin-top: 4px;
-    margin-right:16px;
+    margin-top: 30px;
     color: black;
     text-transform: uppercase;
-    display: inline-block;
+    //display: block;
+    display: none;
+  }
+}
+
+.course--content {
+  display: inline-block;
+  position: relative;
+  padding-left: 180px;
+  font-size: 10pt;
+
+  &-title {
+    @include bold-font(18pt);
+    color: $header-text-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+
+    &:after {
+      content: "";
+      width: 30px;
+      display: block;
+      border-bottom: 2px solid black;
+      margin: 15px 0;
+    }
+  }
+
+  &-hook {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.8;
   }
 
   &-tags {

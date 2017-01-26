@@ -39,6 +39,7 @@
   background-size: 2000px auto;
   background-position: center -150px;
   height: 800px;
+  position: relative;
 
   &::before {
     content:"";
@@ -48,5 +49,288 @@
     background-color: black;
     opacity: 0.25;
     z-index: 0;
+  }
+}
+
+.fullscreen--scroll-arrowDown {
+  position: absolute;
+  opacity: 0.7;
+  width: 100%;
+  height: 120px;
+  z-index: 3;
+  bottom: 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    height: 30px;
+    width: 30px;
+    bottom: 80px;
+    left: 50%;
+    margin-left: -15px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+  }
+}
+
+.content--wrapper-home {
+  font-size: 0pt;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+}
+
+.home--news-content-wrapper {
+  width:100%;
+  display: inline-block;
+}
+
+.home--news,
+.home--events,
+.home--courses {
+  &-heading {
+    @include bold-font(13pt);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: $header-text-color;
+    padding: 0 60px 30px 60px;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 30px;
+      border-bottom: 3px solid black;
+      position: relative;
+      display: block;
+      margin: 15px 0;
+    }
+
+    a:hover {
+      text-decoration: none;
+      background-color: #e8e8e8;
+      padding: 6px 12px;
+      margin: -6px -12px;
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    font-size: 10pt;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 60px 0 120px 0;
+
+    &:first-child {
+      margin-left: 1px;
+      border-right: 1px solid #e8e8e8;
+      margin-right: -1px;
+    }
+
+    &:not(:first-child) {
+      border-left: 1px solid #e8e8e8;
+    }
+  }
+
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-content {
+    padding: 0 60px;
+    overflow: hidden;
+  }
+
+  &-title {
+    @include bold-font(13pt);
+    color: $header-text-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  &-date,
+  &-tags {
+    text-transform: uppercase;
+    font-size: 9pt;
+    letter-spacing: 0.12em;
+    line-height: 1.8;
+    width: 100%;
+    color: lighten($body-text-color, 25%);
+  }
+
+  &-hook {
+    text-transform: uppercase;
+    font-size: 9pt;
+    letter-spacing: 0.06em;
+    line-height: 1.8;
+    width: 100%;
+  }
+
+  &-more {
+    @include bold-font(10pt);
+    letter-spacing: 0.1em;
+    border: 2px solid black;
+    padding: 4px 16px 6px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $header-text-color;
+    display: inline-block;
+    margin: 60px 60px 0 60px;
+  }
+}
+
+.home--events {
+  &-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-tile {
+    border: 2px solid black;
+    background-color: black;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    position: absolute;
+    margin-top: 2px;
+    left: 60px;
+    color: $header-text-color;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:before {
+      content:"";
+      z-index: -1;
+      top:-4px;
+      left:-4px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid black;
+      background-color: white;
+      position: absolute;
+    }
+
+    .tile--month {
+      margin-top:-3px;
+      margin-left:-2px;
+      @include bold-font(8pt);
+      letter-spacing: 0.15em;
+    }
+
+    .tile--day {
+      @include bold-font(14pt);
+      margin-top:-5px;
+      margin-left:-2px;
+      letter-spacing: 0.10em;
+    }
+  }
+
+  &-title {
+    position: relative;
+    padding:0 0 0 60px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+  }
+
+  &-date {
+    position: relative;
+    padding:0 0 0 60px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+  }
+}
+
+.home--courses {
+  &-wrapper {
+    margin-top: -90px;
+  }
+
+  &-icon {
+    position: absolute;
+    width: 60px;
+    margin-top: -8px;
+  }
+
+  &-title {
+    position: relative;
+    padding:0 0 0 80px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    margin-bottom: 0 !important;
+  }
+
+  &-tags {
+    position: relative;
+    padding:0 0 0 80px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+  }
+}
+
+.home--machines {
+  &-wrapper {
+    background-color: #FFF683;
+    position: relative;
+    margin: 0 auto;
+    padding: 90px 0 120px 0;
+    text-align: center;
+  }
+
+  &-heading {
+    @include bold-font(13pt);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: $header-text-color;
+    padding: 0 0 15px 0;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 30px;
+      border-bottom: 3px solid black;
+      position: relative;
+      display: block;
+      left: 50%;
+      margin: 15px 0 15px -15px;
+    }
+  }
+
+  &-subheading {
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0 0 60px 0;
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    color: #99934E;
+  }
+
+  &-link {
+    margin-top: 90px;
+    & a {
+      background-color: #FFF683 !important;
+    }
   }
 }

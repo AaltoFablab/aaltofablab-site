@@ -177,11 +177,19 @@
     font-size: 11pt;
     letter-spacing: 0.12em;
     line-height: 1.8;
+
+    &:after {
+      content: "";
+      width: 30px;
+      display: block;
+      border-bottom: 2px solid black;
+      margin-top: 15px;
+    }
   }
 
   &-hook {
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     line-height: 1.8;
   }
 

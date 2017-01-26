@@ -28,8 +28,17 @@
     max-width: 150px;
     height: auto;
     padding: 30px 0 15px 0;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
     display: block;
+    animation-name: drop;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+
+    &:hover {
+      animation-name: raise;
+      animation-duration: 0.3s;
+      animation-fill-mode: forwards;
+    }
   }
 }
 
@@ -42,6 +51,7 @@
 .machine--group {
   padding: 0 0 90px 0;
   text-align: center;
+  position: relative;
 
   &-heading {
     @include bold-font(30pt);

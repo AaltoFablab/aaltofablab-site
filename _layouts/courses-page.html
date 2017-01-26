@@ -23,11 +23,11 @@ layout: default
   <div class="course--wrapper">
     <div class="course--image">
       <img src="{{ course.icon }}" />
+      <div class="course--image-link">View Course</div>
     </div>
     <div class="course--content">
       <div class="course--content-title">{{ course.title | escape }}</div>
       <div class="course--content-hook">{{ course.excerpt }}</div>
-      <div class="course--content-link">View Course</div>
       <div class="course--content-tags">{{ course.tags | join: "&nbsp;&nbsp;&nbsp;" }}</div>
     </div>
   </div>

@@ -13,4 +13,4 @@ tags:
 icon: /img/uploads/3d-printer-intro-icon.svg
 ---
 
-Learn the basics of FDM 3D-Printing, ready for your next project.
+Learn the basics of FDM 3D-Printing, ready for your next project. This hands on intro course covers everything you need to make your first 3D print a success, from preparing the 3D model, setting up the printer, loading filament and running your first 3D print.

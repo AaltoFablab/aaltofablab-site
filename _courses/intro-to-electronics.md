@@ -13,4 +13,4 @@ tags:
 icon: /img/uploads/electronics-intro-icon.svg
 ---
 
-Get started with programmable electronics using Arduino.
+Get started with programmable electronics using Arduino! You'll learn how to prototype electronic devices using sensors, actuators and some basic coding. We'll start by guiding you through the process of making a simple 3-tone touch keyboard.

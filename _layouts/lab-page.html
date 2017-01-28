@@ -19,7 +19,7 @@ layout: default
   <div id="3d-printers" class="machine--group three-d-printers">
     <div class="machine--group-heading">3D Printers</div>
 
-    {% assign 3Dprinters = site.machines | where: 'categories', 'machines' | where: 'categories', '3d-printer'  %}
+    {% assign 3Dprinters = site.machines | where: 'categories', 'machines' | where: 'categories', '3d-printer' %}
     {% for machine in 3Dprinters %}
     <div class="machine--wrapper three-col">
       <div class="machine--image" style="background-image:url({{ machine.image }})"></div>

@@ -5,20 +5,36 @@
 .info--fullscreen {
   background-color: #FFF683 !important;
   position: relative;
-}
+  overflow: hidden;
 
-.info--fullscreen-wrapper {
-  position: relative;
-  text-align: center;
-  width: 500px;
-  margin-left: -250px;
-  top: 50%;
-  left: 50%;
-  height: 300px;
-  overflow: visible;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    margin: -20px;
+    background-image: url('img/harald-herlin-learning-centre.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+  }
 
-  .info--contact-button .shadow {
-    background-color: #FFF683 !important;
+  &:after {
+    background-color: rgba(0,0,0,0.10);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -72,8 +88,41 @@
   }
 }
 
+.nav--info-sections {
+  position: absolute;
+  padding: 40px;
+  width: 200px;
+  margin-right: 30px;
+  color: $header-text-color;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 9pt;
+
+  > ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 8px;
+
+    >li {
+      padding: 4px 0;
+
+      &:first-child {
+        @include bold-font(11pt);
+        margin-bottom: 8px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
 .content--wrapper-info {
-  padding: 0 60px;
+  margin-left: 310px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 1px solid #e8e8e8;
 }
 
 .info--content-section {
@@ -81,7 +130,25 @@
   text-transform: uppercase;
   color: $header-text-color;
   padding: 120px 0;
+  font-size: 9pt;
+  letter-spacing: 0.12em;
+  line-height: 2;
+
   &:not(:last-child) {
     border-bottom: 1px solid #e8e8e8;
+  }
+
+  p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a {
+    @include bold-font(inherit);
+  }
+
+  .shadow {
+    font-size: 10pt;
   }
 }

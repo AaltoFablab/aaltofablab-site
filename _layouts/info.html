@@ -2,48 +2,70 @@
 layout: default
 ---
 
-<div class="fullscreen info--fullscreen">
-  <div class="info--fullscreen-wrapper">
-    <div class="info--contact-button">
-      <a href="mailto:fablab.aalto.fi" class="shadow">Get In Touch</a>
-    </div>
-  </div>
+<div class="fullscreen info--fullscreen"></div>
+
+{% assign labInfo = site.info | where: 'categories', 'labInfo' %}
+{% assign howItWorks = site.info | where: 'categories', 'howItWorks' %}
+{% assign aboutFabLabs = site.info | where: 'categories', 'aboutFabLabs' %}
+{% assign faqs = site.faqs | sort: "date" %}
+
+<div class="nav--info-sections">
+  <ul>
+    <li><a href="#labInfo">Lab Info</a></li>
+    {% for i in labInfo %}
+    <li><a href="#{{ i.slug }}">{{ i.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <ul>
+    <li><a href="#HowItWorks">How It Works</a></li>
+    {% for i in howItWorks %}
+    <li><a href="#{{ i.slug }}">{{ i.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <ul>
+    <li><a href="#aboutFabLabs">About Fab Labs</a></li>
+    {% for i in aboutFabLabs %}
+    <li><a href="#{{ i.slug }}">{{ i.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <ul>
+    <li><a href="#faqs">FAQs</a></li>
+    {% for q in faqs %}
+    <li><a href="#{{ q.slug }}">{{ q.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="content--wrapper-info">
-  <div class="info--content-section">
-    <div class="info--contact-icon">
-      Opening Times
-    </div>
-    <div class="info--contact-times">
-      MON&emsp;—&emsp;FRI&emsp;&emsp;|&emsp;&emsp;10:00&emsp;—&emsp;16:00
-    </div>
-    <div class="info--contact-text">
-      WE HOLD INTRO COURSES EVERY MONDAY<br/>
-      PLEASE RESERVE MACHINES IN ADVANCE
-    </div>
-    <div class="info--contact-button">
-      <a href="mailto:fablab.aalto.fi" class="shadow">Make A Reservation</a>
-      <p>* @Aalto.fi email address required</p>
-    </div>
-  </div>
 
-  <div class="info--content-section">
-    <div class="info--map-section">
-      <div class="info--map-icon">
-        Find Us
-      </div>
-      <div class="info--map-header">
-        Aalto Fablab
-      </div>
-      <div class="info--map-text">
-        Harald Herlin Learning Centre<br/>
-        Otaniementie 9<br/>
-        Espoo<br/>
-        Finland
-      </div>
-      <div class="info--map-button">
-        <a href="https://maps.google.com?daddr=Otaniementie+9+Espoo+Finland" class="shadow" target="_blank">Get Directions</a>
-      </div>
+  <div id="labInfo"></div>
+  {% for i in labInfo %}
+  <div class="info--content-section" id="{{ i.slug }}">
+    <div class="info--contact-icon">{{ i.title }}</div>
+    {{ i.content }}
   </div>
-</div>
+  {% endfor %}
+
+  <div id="howItWorks"></div>
+  {% for i in howItWorks %}
+  <div class="info--content-section" id="{{ i.slug }}">
+    <div class="info--contact-icon">{{ i.title }}</div>
+    {{ i.content }}
+  </div>
+  {% endfor %}
+
+  <div id="aboutFabLabs"></div>
+  {% for i in aboutFabLabs %}
+  <div class="info--content-section" id="{{ i.slug }}">
+    <div class="info--contact-icon">{{ i.title }}</div>
+    {{ i.content }}
+  </div>
+  {% endfor %}
+
+  <div class="info--content-section" id="faqs">
+    {% for q in faqs %}
+    <div class="info--contact-icon" id="{{ q.slug }}">{{ q.title }}</div>
+    <div class="info--contact-text">{{ q.content }}<p>&nbsp;</p></div>
+    {% endfor %}
+  </div>
+</div><!-- content--wrapper-info /-->

@@ -6,7 +6,7 @@ categories:
   - "labInfo"
 ---
 
-<div class="info--map-header">
+<div class="info--map-subheading">
   Aalto Fablab
 </div>
 <div class="info--map-text">

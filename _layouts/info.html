@@ -5,6 +5,7 @@ layout: default
 <div class="fullscreen info--fullscreen"></div>
 
 {% assign labInfo = site.info | where: 'categories', 'labInfo' %}
+{% assign people = site.info | where: 'categories', 'people' %}
 {% assign howItWorks = site.info | where: 'categories', 'howItWorks' %}
 {% assign aboutFabLabs = site.info | where: 'categories', 'aboutFabLabs' %}
 {% assign faqs = site.faqs | sort: "date" %}
@@ -17,7 +18,7 @@ layout: default
     {% endfor %}
   </ul>
   <ul>
-    <li><a href="#HowItWorks">How It Works</a></li>
+    <li><a href="#howItWorks">How It Works</a></li>
     {% for i in howItWorks %}
     <li><a href="#{{ i.slug }}">{{ i.title }}</a></li>
     {% endfor %}
@@ -41,31 +42,69 @@ layout: default
   <div id="labInfo"></div>
   {% for i in labInfo %}
   <div class="info--content-section" id="{{ i.slug }}">
-    <div class="info--contact-icon">{{ i.title }}</div>
-    {{ i.content }}
+    <div class="info--contact-heading">{{ i.title }}</div>
+    {% if i.title != "People" %}
+      {{ i.content }}
+    {% else %}
+    <div class="info--contact-people">
+      {% for p in people %}
+        <div class="info--person-wrapper">
+          <div class="info--person-image"><img src="{{ p.image }}" /></div>
+          <div class="info--person-details">
+            <div class="info--person-name">
+              {% if p.email %}
+                <a href="mailto:{{ p.email }}@aalto.fi">
+              {% endif %}
+
+              {{ p.name }}
+
+              {% if p.email %}
+                </a>
+              {% endif %}
+            </div>
+            <div class="info--person-role">{{ p.role }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
   {% endfor %}
 
-  <div id="howItWorks"></div>
-  {% for i in howItWorks %}
-  <div class="info--content-section" id="{{ i.slug }}">
-    <div class="info--contact-icon">{{ i.title }}</div>
-    {{ i.content }}
+  <div id="howItWorks" class="info--content-section">
+    <div class="info--contact-heading">How It Works</div>
+    <p>&nbsp;</p>
+    {% for i in howItWorks %}
+    <div id="{{ i.slug }}">
+      <div class="info--contact-subheading">{{ i.title }}</div>
+      <p>&nbsp;</p>
+      {{ i.content }}
+      <p>&nbsp;</p>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 
-  <div id="aboutFabLabs"></div>
-  {% for i in aboutFabLabs %}
-  <div class="info--content-section" id="{{ i.slug }}">
-    <div class="info--contact-icon">{{ i.title }}</div>
-    {{ i.content }}
+  <div id="aboutFabLabs" class="info--content-section">
+    <div class="info--contact-heading">About Fab Labs</div>
+    <p>&nbsp;</p>
+    {% for i in aboutFabLabs %}
+    <div id="{{ i.slug }}">
+      <div class="info--contact-subheading">{{ i.title }}</div>
+      {{ i.content }}
+      <p>&nbsp;</p>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 
   <div class="info--content-section" id="faqs">
+    <div class="info--contact-heading">FAQs</div>
+    <p>&nbsp;</p>
     {% for q in faqs %}
-    <div class="info--contact-icon" id="{{ q.slug }}">{{ q.title }}</div>
-    <div class="info--contact-text">{{ q.content }}<p>&nbsp;</p></div>
+    <div class="info--contact-text" id="{{ q.slug }}">
+      <span class="bold">Q: {{ q.title }}</span>
+      <p>{{ q.content }}</p>
+      <p>&nbsp;</p>
+    </div>
     {% endfor %}
   </div>
 </div><!-- content--wrapper-info /-->

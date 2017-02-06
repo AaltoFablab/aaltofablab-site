@@ -40,7 +40,7 @@
 
 .info--contact,
 .info--map {
-  &-icon {
+  &-heading {
     @include bold-font(12pt);
     letter-spacing: 0.15em;
     position: relative;
@@ -58,7 +58,7 @@
     }
   }
 
-  &-header {
+  &-subheading {
     @include bold-font(12pt);
     letter-spacing: 0.15em;
     margin-bottom: 10px;
@@ -150,5 +150,48 @@
 
   .shadow {
     font-size: 10pt;
+  }
+}
+
+.info--contact-people {
+  width: 100%;
+  display: inline-table;
+  margin-top: 30px;
+}
+
+.info--person {
+  &-wrapper {
+    position: relative;
+    width: 33.33333%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  &-image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    margin: 0 15px;
+  }
+
+  &-details {
+    padding: 15px 0 15px;
+    border: 1px solid #e8e8e8;
+    border-top-width: 0;
+    margin: 0 15px;
+    line-height: 1.6em;
+  }
+
+  &-name {
+    @include bold-font(inherit);
+  }
+
+  &-role {
+    opacity: 0.4;
+    font-size: 90%;
   }
 }

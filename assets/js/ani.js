@@ -1,6 +1,8 @@
 var i;
 var featureScroller;
 var anchors;
+var stickyNav;
+var stickyNavTop;
 
 document.onkeydown = function(e) {
   switch (e.keyCode) {
@@ -16,10 +18,11 @@ document.onkeydown = function(e) {
 };
 
 window.onload = function() {
-	init();
+	initScroller();
+  initSticky();
 };
 
-function init() {
+function initScroller() {
 	i = 1;
 	featureScroller = document.querySelectorAll("#featureScroller");
   anchors = document.querySelectorAll('a[href*="#"]');
@@ -47,6 +50,19 @@ function scrollToRight() {
 	}
 }
 
-function getCssProperty(element, property) {
-   return window.getComputedStyle(element,null).getPropertyValue(property);
+function initSticky() {
+  stickyNav = document.getElementById("infoNav");
+  stickyNavTop = stickyNav.offsetTop;
+
+  window.addEventListener("scroll", sticky);
+}
+
+function sticky() {
+  var scrollTop = window.scrollY;
+  console.log(scrollTop, stickyNavTop);
+  if(scrollTop > stickyNavTop) {
+    stickyNav.className = "nav--info-sections sticky";
+  } else {
+    stickyNav.className = "nav--info-sections";
+  }
 }

@@ -10,7 +10,7 @@ layout: default
 {% assign aboutFabLabs = site.info | where: 'categories', 'aboutFabLabs' %}
 {% assign faqs = site.faqs | sort: "date" %}
 
-<div class="nav--info-sections">
+<div id="infoNav" class="nav--info-sections">
   <ul>
     <li><a href="#labInfo">Lab Info</a></li>
     {% for i in labInfo %}

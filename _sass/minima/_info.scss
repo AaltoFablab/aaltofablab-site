@@ -3,7 +3,6 @@
  */
 
 .info--fullscreen {
-  background-color: #FFF683 !important;
   position: relative;
   overflow: hidden;
 
@@ -86,6 +85,13 @@
       margin-top: 30px;
     }
   }
+}
+
+.sticky {
+  position: fixed !important;
+  top:0px;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .nav--info-sections {
@@ -193,5 +199,25 @@
   &-role {
     opacity: 0.4;
     font-size: 90%;
+  }
+}
+
+#howItWorks, #aboutFabLabs, #faqs {
+  span, p, ol {
+    text-transform: none;
+    font-size: 12pt;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+  }
+
+  ol {
+    text-align: left;
+    width: 60%;
+    margin: 30px auto;
+
+    li {
+      padding-left: 30px;
+      padding-bottom: 15px;
+    }
   }
 }

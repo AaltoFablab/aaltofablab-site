@@ -52,14 +52,16 @@ function scrollToRight() {
 
 function initSticky() {
   stickyNav = document.getElementById("infoNav");
-  stickyNavTop = stickyNav.offsetTop;
 
-  window.addEventListener("scroll", sticky);
+  if(stickyNav != undefined) {
+    stickyNavTop = stickyNav.offsetTop;
+    window.addEventListener("scroll", sticky);
+  }
 }
 
 function sticky() {
   var scrollTop = window.scrollY;
-  console.log(scrollTop, stickyNavTop);
+
   if(scrollTop > stickyNavTop) {
     stickyNav.className = "nav--info-sections sticky";
   } else {

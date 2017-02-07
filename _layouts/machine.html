@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<script type='text/javascript'>
+
+$(document).ready(function() {
+  var calendarId = $('#calendar').data( "calendarId" )
+  $('#calendar').fullCalendar({
+      // THIS KEY WILL NOT WORK FOR ANY OTHER SITE
+			// To make your own Google API key, follow the directions here:
+			// http://fullcalendar.io/docs/google_calendar/
+      googleCalendarApiKey: 'AIzaSyDOZ5DQKNFagv_4RRMQID2EekqlRPelwQU',
+      events: {
+          googleCalendarId: calendarId
+      }
+  });
+});
+
+</script>
+
+<div class="fullscreen machine--fullscreen" style="background-image:url({{ page.image }});">
+</div>
+
+<div class="content--wrapper-machine">
+  <div class="machine--specs">
+    {% if page.icon %}
+      <div class="machine--specs-item icon">
+        <img src="{{ page.icon }}" />
+      </div>
+    {% endif %}
+
+    <div class="machine--specs-item">
+      <span class="bold">Model</span><br/>
+      {{ page.name }}
+    </div>
+    {% assign specs = page.specs %}
+    {% for spec in specs %}
+      <div class="machine--specs-item">
+        <span class="bold">{{ spec[0] }}</span><br/>
+        {{ spec[1] }}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="machinePage--content">
+    <h1>{{ page.name }}</h1>
+    <div>{{ page.content }}</div>
+    <div id="calendar" data-calendar-id="{{ page.calendarID }}@group.calendar.google.com"></div>
+  </div>
+
+</div> <!-- content--wrapper /-->

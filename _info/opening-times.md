@@ -6,8 +6,13 @@ categories:
   - "labInfo"
 ---
 
-<div class="info--contact-times">
-  MON&emsp;—&emsp;FRI&emsp;&emsp;|&emsp;&emsp;10:00&emsp;—&emsp;16:00
+<div markdown="1" class="info--contact-times">
+
+  |--------------------- |:--:|:----------------------- |
+  | MON&emsp;—&emsp;WEDS | &emsp;&emsp;&emsp;\|&emsp;&emsp;&emsp; | 10:00&emsp;—&emsp;16:00 |
+  | THURS | &emsp;&emsp;&emsp;\|&emsp;&emsp;&emsp; | 12:00&emsp;—&emsp;16:00 |
+  | FRI | &emsp;&emsp;&emsp;\|&emsp;&emsp;&emsp; | 10:00&emsp;—&emsp;16:00 |
+
 </div>
 
 <div class="info--contact-text">

@@ -56,5 +56,3 @@ collections:
     output: true
   news:
     output: false
-  share:
-    output: true

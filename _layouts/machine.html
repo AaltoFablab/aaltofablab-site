@@ -2,22 +2,61 @@
 layout: default
 ---
 
+{% if page.calendarID %}
 <script type='text/javascript'>
 
 $(document).ready(function() {
   var calendarId = $('#calendar').data( "calendarId" )
   $('#calendar').fullCalendar({
-      // THIS KEY WILL NOT WORK FOR ANY OTHER SITE
-			// To make your own Google API key, follow the directions here:
-			// http://fullcalendar.io/docs/google_calendar/
-      googleCalendarApiKey: 'AIzaSyDOZ5DQKNFagv_4RRMQID2EekqlRPelwQU',
-      events: {
-          googleCalendarId: calendarId
+    // THIS KEY WILL NOT WORK FOR ANY OTHER SITE
+		// To make your own Google API key, follow the directions here:
+		// http://fullcalendar.io/docs/google_calendar/
+    googleCalendarApiKey: 'AIzaSyDOZ5DQKNFagv_4RRMQID2EekqlRPelwQU',
+    events: {
+        googleCalendarId: calendarId
+    },
+    defaultView: 'agendaSeven',
+    views: {
+      agendaSeven: {
+          type: 'agenda',
+          duration: { days: 7 }
       }
+    },
+    allDaySlot: false,
+    slotDuration: '00:30:00',
+    snapDuration: '01:00:00',
+    weekends: false,
+    weekNumbers: true,
+    weekNumberTitle: 'Wk.',
+    scrollTime: '09:00:00',
+    minTime: '08:00:00',
+    maxTime: '18:00:00',
+    timeFormat: 'H:mm',
+    titleFormat: 'MMM D',
+    columnFormat: 'ddd DD/MM',
+    businessHours: [ // specify an array instead
+      {
+        dow: [ 1, 2, 3, 5 ], // Monday, Tuesday, Wednesday, Friday
+        start: '10:00', // 10am
+        end: '16:00' // 4pm
+      },
+      {
+        dow: [ 4 ], // Thursday
+        start: '12:00', // 12pm
+        end: '16:00' // 4pm
+      }
+    ],
+    eventColor: '#d14',
+    eventTextColor: '#DA1044',
+    displayEventTime: false,
+    eventClick: function(event) {
+      return false;
+    }
   });
 });
 
 </script>
+{% endif %}
 
 <div class="fullscreen machine--fullscreen" style="background-image:url({{ page.image }});">
 </div>

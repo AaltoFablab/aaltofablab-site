@@ -20,7 +20,7 @@
 }
 
 .machine--specs {
-  padding: 45px;
+  padding: 60px 45px 45px 45px;
   width: 200px;
   color: #898989;
   text-transform: uppercase;
@@ -57,7 +57,7 @@
   display: table-cell;
   border: none;
   text-transform: none;
-  padding: 45px 180px 60px 120px;
+  padding: 60px 180px 60px 120px;
   font-size: 14pt;
   letter-spacing: 0.033em;
   line-height: 1.8;
@@ -85,4 +85,42 @@
     @include bold-font(inherit);
     color: black;
   }
+}
+
+/* Full Calendar */
+
+#calendar {
+  margin-top:90px;
+}
+
+.fc-unthemed td.fc-today {
+  background-color: #fdeded !important;
+}
+
+.fc-nonbusiness {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAASUlEQVQoU2NcsWLFf319fQZ84OLFiwyM169f/w9i4FIMkwMrBJmGTTGyGFwhumJ0jSgKYYpBNLpTyFOIbB1Oq4nyDFHBQ2yAAwDdo1IZuAFmrQAAAABJRU5ErkJggg==) repeat !important;
+}
+
+.fc-ltr .fc-time-grid .fc-event-container {
+    margin: 0 -1px  !important;
+}
+
+.fc-event {
+  border-radius: 0 !important;
+  margin-bottom: -1px !important;
+  padding: 0.33em;
+}
+
+.fc-title {
+  display:none;
+}
+
+.fc-content:after {
+  content: "Reserved";
+  position: relative;
+  display: inline-block;
+}
+
+a.fc-event {
+  pointer-events: none;
 }

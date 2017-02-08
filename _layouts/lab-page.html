@@ -7,7 +7,7 @@ layout: default
     <div class="machine--icons-wrapper-internal">
       <a href="#3d-printers"><div class="machine--icon"><img src="/assets/img/icons/machines/3d-printers.svg" /><p>3D-Printers</p></div></a>
       <a href="#cutting-machines"><div class="machine--icon"><img src="/assets/img/icons/machines/cutting-machines.svg" />Cutting Machines</div></a>
-      <a href="#cnc-machines"><div class="machine--icon"><img src="/assets/img/icons/machines/cnc-machines.svg" />CNC Machines</div></a>
+      <a href="#cnc"><div class="machine--icon"><img src="/assets/img/icons/machines/cnc-machines.svg" />CNC Machines</div></a>
       <a href="#scanning-devices"><div class="machine--icon"><img src="/assets/img/icons/machines/scanning-devices.svg" />3D-Scanners</div></a>
       <a href="#electronics"><div class="machine--icon"><img src="/assets/img/icons/machines/electronics.svg" />Electronics</div></a>
       <a href="#misc"><div class="machine--icon"><img src="/assets/img/icons/machines/hand-tools.svg" />Hand Tools</div></a>
@@ -20,6 +20,9 @@ layout: default
 <div class="content--wrapper-lab">
   <div id="3d-printers" class="machine--group three-d-printers">
     <div class="machine--group-heading">3D Printers</div>
+    <div class="machine--group-description">
+      The posterboy of Digital Fabrication! Great for creating complex and unique forms that are not possible with other methods.
+    </div>
 
     {% assign 3Dprinters = site.machines | where: 'categories', '3d-printers' %}
     {% for machine in 3Dprinters %}
@@ -37,9 +40,12 @@ layout: default
   </div><!-- machine--group /-->
 
   <div id="cutting-machines" class="machine--group cutting-machines">
-      <div class="machine--group-heading">Cutting Machines</div>
+    <div class="machine--group-heading">Cutting Machines</div>
+    <div class="machine--group-description">
+      Cuts, score and engrave 2D materials to make components. Manipulate and assemble them into 3D objects.
+    </div>
 
-    {% assign cuttingMachines = site.machines | where: 'categories', 'cutting-machine'  %}
+    {% assign cuttingMachines = site.machines | where: 'categories', 'cutting-machines'  %}
     {% for machine in cuttingMachines %}
     <div class="machine--wrapper three-col">
       <a href="{{ machine.url }}">
@@ -54,8 +60,11 @@ layout: default
   {% endfor %}
   </div><!-- machine--group /-->
 
-  <div id="cnc-machines" class="machine--group cnc-machines">
+  <div id="cnc" class="machine--group cnc-machines">
     <div class="machine--group-heading">CNC Machines</div>
+    <div class="machine--group-description">
+      Use computer-controlled milling machines to remove material from sheet or mass stock to create precise 2D and 3D objects.
+    </div>
 
     {% assign cncMachines = site.machines | where: 'categories', 'cnc'  %}
     {% for machine in cncMachines %}
@@ -74,6 +83,9 @@ layout: default
 
   <div id="scanning-devices" class="machine--group scanning-devices">
     <div class="machine--group-heading">Scanning Devices</div>
+    <div class="machine--group-description">
+      Capture geometric complexity that connot be easily modelled in software, using 3D-scanning techniques.
+    </div>
 
     {% assign scanners = site.machines | where: 'categories', 'scanning-devices'  %}
     {% for machine in scanners %}
@@ -92,6 +104,9 @@ layout: default
 
   <div id="electronics" class="machine--group electronics">
     <div class="machine--group-heading">Electronics</div>
+    <div class="machine--group-description">
+      Bring you projects and prototypes alive with programmable electronics and micro-controllers.
+    </div>
 
     {% assign electronics = site.machines | where: 'categories', 'electronics'  %}
     {% for machine in electronics %}
@@ -110,6 +125,9 @@ layout: default
 
   <div id="misc" class="machine--group misc">
     <div class="machine--group-heading">Misc</div>
+    <div class="machine--group-description">
+      Facilities, hardware and materials all in the name of making.
+    </div>
 
     {% assign misc = site.machines | where: 'categories', 'misc'  %}
     {% for machine in misc %}

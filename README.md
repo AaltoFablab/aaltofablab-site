@@ -19,23 +19,23 @@ Content displayed on the **"Share"** page is pulled from the standard **_posts**
 
 All other content is organised into custom collections, located in **source/\_\<collectionName\>** directories. The content within collections is further organised in categories declared in the YAML metadata.
 
-| courses | events | faqs | info | machines             | news |
-| ------- | ------ | ---- | ---- | -------------------- | ---- |
-|         |        |      |      | 3d-printer           |      |
-|         |        |      |      | _sla_                |      |
-|         |        |      |      | _fdm_                |      |
-|         |        |      |      | _dual-extruder_      |      |
-|         |        |      |      | cutting-machine      |      |
-|         |        |      |      | _lasercutter_        |      |
-|         |        |      |      | cnc                  |      |
-|         |        |      |      | _3-axis_             |      |
-|         |        |      |      | _4-axis_             |      |
-|         |        |      |      | electronics          |      |
-|         |        |      |      | _facilities_         |      |
-|         |        |      |      | _prototyping-boards_ |      |
-|         |        |      |      | scanning-devices     |      |
-|         |        |      |      | _3d-scanner_         |      |
-|         |        |      |      | misc                 |      |
+| courses     | events | faqs | info         | machines             | news |
+| ----------- | ------ | ---- | ------------ | -------------------- | ---- |
+| courses     | events | faqs | labInfo      | **3d-printers**      | news |
+| lasercutter | public |      | people       | _sla_                |      |
+| 3D-printing |        |      | howItWorks   | _fdm_                |      |
+| electronics |        |      | aboutFabLabs | _dual-extruder_      |      |
+| basics      |        |      |              | **cutting-machines** |      |
+| cad         |        |      |              | _lasercutter_        |      |
+|             |        |      |              | **cnc**              |      |
+|             |        |      |              | _3-axis_             |      |
+|             |        |      |              | _4-axis_             |      |
+|             |        |      |              | **electronics**      |      |
+|             |        |      |              | _facilities_         |      |
+|             |        |      |              | _prototyping-boards_ |      |
+|             |        |      |              | **scanning-devices** |      |
+|             |        |      |              | _3d-scanner_         |      |
+|             |        |      |              | **misc**             |      |
 
 ## Image Assets
 

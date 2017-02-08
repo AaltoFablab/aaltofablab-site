@@ -5,7 +5,7 @@ name: Digima SHG1212
 sub: 3-Axis CNC Router
 categories:
   - machines
-  - cnc
+  - old
   - 3-axis
 image: /img/uploads/digima-shg1212.jpg
 status: decommissioned

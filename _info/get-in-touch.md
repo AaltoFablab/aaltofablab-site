@@ -15,6 +15,6 @@ TO YOU AS SOON AS POSSIBLE* :
   <a href="mailto:fablab@aalto.fi">fablab [AT] aalto.fi</a>
 </div>
 
--
+&nbsp;
 
 \* CHECK OUR [FAQS](#faqs) FOR ANSWERS TO FREQUENT QUESTIONS

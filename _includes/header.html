@@ -4,7 +4,7 @@
 
     {% if page.layout == 'home' %}
       <span class="logo logo--amf-header">{% include logos/amf-logo_wht.svg %}</span>
-    {% else if page.layout == 'machine' %}
+    {% elsif page.layout == 'machine' %}
       <svg class="logo--afl-background" height="70" width="70"><circle cx="35" cy="35" r="34" stroke="black" stroke-width="0" fill="black" /></svg>
       <a href="/lab#{{ page.categories[1] }}"><span class="logo logo--afl-header">{% include logos/aaltofablab-logo.svg %}</span></a>
     {% else %}

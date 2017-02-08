@@ -56,6 +56,7 @@ function initSticky() {
   if(stickyNav != undefined) {
     stickyNavTop = stickyNav.offsetTop;
     window.addEventListener("scroll", sticky);
+    sticky();
   }
 }
 

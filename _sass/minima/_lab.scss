@@ -50,24 +50,30 @@
 .content--wrapper-lab {
   width: 100% !important;
   font-size: 0pt;
-  padding-top: 60px;
 }
 
 .machine--group {
-  padding: 0 0 90px 0;
+  padding: 60px 0 90px 0;
   text-align: center;
   position: relative;
+  background: transparent; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(250,250,250), white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(250,250,250), white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(250,250,250), white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(250,250,250), white); /* Standard syntax */
+
+  &:not(:last-child) {
+  }
 
   &-heading {
     @include bold-font(30pt);
     width: 100%;
-    padding: 30px 0 110px 0;
+    padding: 30px 0 60px 0;
     color: $header-text-color;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     position: relative;
-    background-color: white;
 
     &:after {
       content: "";
@@ -76,8 +82,18 @@
       width: 40px;
       margin-left: -20px;
       left: 50%;
-      bottom: 65px;
+      bottom: 15px;
     }
+  }
+
+  &-description {
+    font-size: 14pt;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 0.033em;
+    padding: 30px 0 110px 0;
   }
 }
 
@@ -86,9 +102,23 @@
   margin: 0 -15px;
   display: inline-block;
   box-sizing: border-box;
+
+  & a:hover {
+    text-decoration: none;
+
+    & .machine--image {
+      &:after {
+        background-color: rgba(0,0,0,0.15);
+      }
+    }
+    & .machine--content {
+      background-color: rgba(0,0,0,0.03);
+    }
+  }
 }
 
 .machine--image {
+  position: relative;
   width: 100%;
   height: 300px;
   background-position: center;
@@ -99,6 +129,16 @@
   border-style: solid;
   border-bottom: none;
   border-color: black !important;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
 }
 
 .machine--content {

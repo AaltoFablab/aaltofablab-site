@@ -5,7 +5,7 @@ name: Roland GX-24
 sub: Vinyl Cutter
 categories:
   - machines
-  - cutting-machine
+  - cutting-machines
   - vinylcutter
 image: /img/uploads/roland-gx-24.jpg
 calendarID: peaq89t93luk1asat2cq5ll1co

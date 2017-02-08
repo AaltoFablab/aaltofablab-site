@@ -5,7 +5,7 @@ name: Epilog Legend 36EXT
 sub: CO2 Laser Cutter & Engraver
 categories:
   - machines
-  - cutting-machine
+  - cutting-machines
   - lasercutter
 image: /img/uploads/epilog-legend-36ext.jpg
 status: operational

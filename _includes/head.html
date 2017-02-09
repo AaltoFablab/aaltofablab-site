@@ -4,7 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    {% if page.title %}
+    {% if page.layout == 'home' %}
+      {{ site.title | escape }} | Aalto University's Open Access Digital Fabrication Lab
+    {% elsif page.title %}
       {{ page.title }} | {{ site.title | escape }}
     {% elsif page.name %}
       {{ page.name }} | {{ site.title | escape }}
@@ -12,7 +14,7 @@
       {{ site.title | escape }} | Aalto University's Open Access Digital Fabrication Lab
     {% endif %}
   </title>
-  
+
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="apple-mobile-web-app-title" content="{{ site.title | escape }}">
 	<meta property="og:title" content="{{ site.title | escape }}">

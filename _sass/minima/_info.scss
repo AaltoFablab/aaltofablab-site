@@ -75,6 +75,11 @@
         text-align: left;
       }
     }
+
+    @media screen and (max-width:$iphone)
+    {
+      font-size: 6pt;
+    }
   }
 
   &-text {
@@ -130,6 +135,11 @@
       }
     }
   }
+
+  @media screen and (max-width:$iphone)
+  {
+    display: none;
+  }
 }
 
 .content--wrapper-info {
@@ -137,6 +147,12 @@
   padding-left: 30px;
   padding-right: 30px;
   border-left: 1px solid #e8e8e8;
+
+  @media screen and (max-width:$iphone)
+  {
+    margin-left: 0;
+    border-left: none;
+  }
 }
 
 .info--content-section {
@@ -156,6 +172,11 @@
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width:$iphone)
+    {
+      width: 100%;
+    }
   }
 
   a {
@@ -164,6 +185,11 @@
 
   .shadow {
     font-size: 10pt;
+  }
+
+  @media screen and (max-width:$iphone)
+  {
+    padding: 60px 0;
   }
 }
 
@@ -182,6 +208,11 @@
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
+
+    @media screen and (max-width:$iphone)
+    {
+      width: 100%;
+    }
   }
 
   &-image {
@@ -216,6 +247,11 @@
     font-size: 12pt;
     letter-spacing: 0.05em;
     line-height: 1.8;
+
+    @media screen and (max-width:$iphone)
+    {
+      font-size: 10pt;
+    }
   }
 
   ol {
@@ -226,6 +262,11 @@
     li {
       padding-left: 30px;
       padding-bottom: 15px;
+    }
+
+    @media screen and (max-width:$iphone)
+    {
+      width: 80%;
     }
   }
 }

@@ -53,6 +53,11 @@
     a {
       color: inherit;
     }
+
+    @media screen and (max-width:$iphone)
+    {
+      display: none;
+    }
   }
 
   &-prefix {
@@ -90,6 +95,11 @@
 
   &:not(:last-child) {
     border-bottom: 1px solid #efefef;
+  }
+
+  @media screen and (max-width:$iphone)
+  {
+    padding: 40px 0;
   }
 }
 
@@ -131,6 +141,11 @@
       margin-left:-10px;
       @include bold-font(10pt);
       letter-spacing: 0.15em;
+
+      @media screen and (max-width:$iphone)
+      {
+        margin-top: -8px;
+      }
     }
 
     .tile--day {
@@ -138,6 +153,17 @@
       margin-top:-5px;
       margin-left:-10px;
       letter-spacing: 0.10em;
+
+      @media screen and (max-width:$iphone)
+      {
+        font-size: 18pt;
+      }
+    }
+
+    @media screen and (max-width:$iphone)
+    {
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -155,6 +181,18 @@
     margin-top: 32px;
     margin-right:16px;
     display: block;
+
+    @media screen and (max-width:$iphone)
+    {
+        display:none;
+    }
+  }
+
+  @media screen and (max-width:$iphone)
+  {
+    width: 80px;
+    margin-left: 30px;
+    margin-top: 0;
   }
 }
 
@@ -170,6 +208,12 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.12em;
+
+    @media screen and (max-width:$iphone)
+    {
+      font-size: 12pt;
+      margin-top: 90px;
+    }
   }
 
   &-date {
@@ -183,6 +227,12 @@
       width: 30px;
       display: block;
       border-bottom: 2px solid black;
+      margin-top: 15px;
+    }
+
+    @media screen and (max-width:$iphone)
+    {
+      font-size: 9pt;
       margin-top: 15px;
     }
   }
@@ -199,5 +249,10 @@
     letter-spacing: 0.06em;
     opacity: 0.4;
     margin-top:30px;
+  }
+
+  @media screen and (max-width:$iphone)
+  {
+    padding: 0 30px;
   }
 }

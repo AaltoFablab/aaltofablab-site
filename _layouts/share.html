@@ -37,7 +37,7 @@ layout: default
 
 <div class="content--wrapper-share">
   <div class="content--share-category">
-    <div class="share--category-heading">
+    <div class="share--category-heading madeinfablab">
       <a class="shadow madeinfablab"># made in fablab</a>
     </div>
   {% for p in madeInFablab %}
@@ -53,7 +53,7 @@ layout: default
   </div><!-- content--share-category /-->
 
   <div class="content--share-category">
-    <<div class="share--category-heading">
+    <<div class="share--category-heading howto">
       <a class="shadow howto">How-To Guides</a>
     </div>
     {% assign howTo = site.posts | where: 'categories', 'howto' %}
@@ -73,7 +73,7 @@ layout: default
   </div><!-- content--share-category /-->
 
   <div class="content--share-category">
-    <div class="share--category-heading">
+    <div class="share--category-heading fabacademy">
       <a class="shadow fabacademy">Fab Academy</a>
     </div>
     {% assign fabAcademy = site.posts | where: 'categories', 'fabacademy' %}

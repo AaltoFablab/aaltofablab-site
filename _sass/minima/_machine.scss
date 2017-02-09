@@ -41,11 +41,27 @@
 
     &:last-child {
       border-bottom: none;
+
+      @media screen and (max-width:$iphone)
+      {
+        border-bottom: 1px solid #e8e8e8;
+      }
     }
 
     &.icon {
       padding-bottom: 60px;
+
+      @media screen and (max-width:$iphone)
+      {
+        display: none;
+      }
     }
+  }
+
+  @media screen and (max-width:$iphone)
+  {
+    padding: 15px 30px;
+    display: block;
   }
 }
 
@@ -79,11 +95,23 @@
       bottom: 4px;
       border-bottom:4px solid black;
     }
+
+    @media screen and (max-width:$iphone)
+    {
+      font-size: 18pt;
+    }
   }
 
   a {
     @include bold-font(inherit);
     color: black;
+  }
+
+  @media screen and (max-width:$iphone)
+  {
+    padding: 30px;
+    display: block;
+    font-size: 12pt;
   }
 }
 
@@ -91,6 +119,11 @@
 
 #calendar {
   margin-top:90px;
+  
+  @media screen and (max-width:$iphone)
+  {
+    margin-top: 30px;
+  }
 }
 
 .fc-unthemed td.fc-today {

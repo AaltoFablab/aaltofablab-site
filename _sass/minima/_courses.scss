@@ -52,6 +52,11 @@
     a {
       color: inherit;
     }
+
+    @media screen and (max-width:$iphone)
+    {
+      display: none;
+    }
   }
 
   &-prefix {
@@ -91,6 +96,11 @@
   &:not(:last-child) {
     border-bottom: 1px solid #efefef;
   }
+
+  @media screen and (max-width:$iphone)
+  {
+    padding: 30px 0;
+  }
 }
 
 .course--image {
@@ -110,6 +120,15 @@
     text-transform: uppercase;
     //display: block;
     display: none;
+  }
+
+  @media screen and (max-width:$iphone)
+  {
+    margin-right: 0;
+    position: initial;
+    width: 100px;
+    margin-left: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -133,12 +152,22 @@
       border-bottom: 2px solid black;
       margin: 15px 0;
     }
+
+    @media screen and (max-width:$iphone)
+    {
+      padding: 0 30px;
+    }
   }
 
   &-hook {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     line-height: 1.8;
+
+    @media screen and (max-width:$iphone)
+    {
+      padding: 0 30px;
+    }
   }
 
   &-tags {
@@ -147,5 +176,19 @@
     letter-spacing: 0.06em;
     opacity: 0.4;
     margin-top:20px;
+
+    @media screen and (max-width:$iphone)
+    {
+      padding: 0 30px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (max-width:$iphone)
+  {
+    padding: 0;
+    display: block;
   }
 }

@@ -20,6 +20,9 @@ document.onkeydown = function(e) {
 window.onload = function() {
 	initScroller();
   initSticky();
+};
+
+document.onload = function() {
   initNavFix();
 };
 

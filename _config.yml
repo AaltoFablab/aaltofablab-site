@@ -53,3 +53,6 @@ collections:
     output: true
   news:
     output: false
+
+# OpenGraph
+fb_app_id: 133268030521979

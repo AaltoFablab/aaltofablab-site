@@ -20,6 +20,7 @@ document.onkeydown = function(e) {
 window.onload = function() {
 	initScroller();
   initSticky();
+  initNavFix();
 };
 
 function initScroller() {
@@ -68,4 +69,10 @@ function sticky() {
   } else {
     stickyNav.className = "nav--info-sections";
   }
+}
+
+function initNavFix() {
+  document.getElementById('siteNavTrigger').addEventListener('click', function()
+	{
+	});
 }

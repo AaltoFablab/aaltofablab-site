@@ -241,3 +241,251 @@ pre {
     fill: black;
   }
 }
+
+/* WebStudio FIX */
+
+@media screen and (max-width: 600px)
+{
+  .site-nav
+  {
+    top: 44px;
+    right: 30px;
+  }
+
+  .content--wrapper
+  {
+    width: 92%;
+  }
+
+  .home--news-wrapper,
+  .home--events-wrapper,
+  .home--courses-wrapper
+  {
+    width: 100%;
+  }
+
+  .three-col
+  {
+    width: 100%;
+  }
+
+  .machine--icon {
+    width: 25%;
+  }
+}
+
+/* WS Quick Fix -- homepage */
+	@media screen and (max-width: 600px)
+	{
+		.site-nav
+		{
+			z-index: 9999;
+		}
+
+		.site-nav:hover .trigger,
+		.site-nav:active .trigger
+		{
+			display: block;
+	        padding-bottom: 5px;
+	    }
+
+		.site-nav .page-link,
+		.site-nav .page-link
+		{
+			border-bottom: 3px solid transparent;
+	    }
+
+		.site-nav:hover .page-link,
+		.site-nav:active .page-link
+		{
+			color: #000;
+
+	    }
+
+		.site-nav .page-link:hover
+		{
+			border-bottom: 3px solid #333;
+
+	    }
+
+	}
+
+/* WS Quick Fix -- lab page */
+@media screen and (max-width: 600px)
+{
+	.site-nav
+	{
+		z-index: 9999;
+	}
+
+	.site-nav:hover .trigger,
+	.site-nav:active .trigger
+	{
+		display: block;
+        padding-bottom: 5px;
+    }
+
+	.site-nav .page-link,
+	.site-nav .page-link
+	{
+		border-bottom: 3px solid transparent;
+    }
+
+	.site-nav:hover .page-link,
+	.site-nav:active .page-link
+	{
+		color: #000;
+
+    }
+
+	.site-nav .page-link:hover
+	{
+		border-bottom: 3px solid #333;
+
+    }
+
+}
+
+/* WS Quick Fix -- events page */
+	@media screen and (max-width: 600px)
+	{
+		.site-nav
+		{
+			z-index: 9999;
+		}
+
+		.site-nav:hover .trigger,
+		.site-nav:active .trigger
+		{
+			display: block;
+	        padding-bottom: 5px;
+	    }
+
+		.site-nav .page-link,
+		.site-nav .page-link
+		{
+			border-bottom: 3px solid transparent;
+	    }
+
+		.site-nav:hover .page-link,
+		.site-nav:active .page-link
+		{
+			color: #000;
+
+	    }
+
+		.site-nav .page-link:hover
+		{
+			border-bottom: 3px solid #333;
+
+	    }
+
+	}
+
+  /* WS Quick Fix -- courses page */
+  	@media screen and (max-width: 600px)
+  	{
+  		.site-nav
+  		{
+  			z-index: 9999;
+  		}
+
+  		.site-nav:hover .trigger,
+  		.site-nav:active .trigger
+  		{
+  			display: block;
+  	        padding-bottom: 5px;
+  	    }
+
+  		.site-nav .page-link,
+  		.site-nav .page-link
+  		{
+  			border-bottom: 3px solid transparent;
+  	    }
+
+  		.site-nav:hover .page-link,
+  		.site-nav:active .page-link
+  		{
+  			color: #000;
+
+  	    }
+
+  		.site-nav .page-link:hover
+  		{
+  			border-bottom: 3px solid #333;
+
+  	    }
+
+  	}
+
+/* WS Quick Fix -- Share Page */
+@media screen and (max-width: 600px)
+{
+	.site-nav
+	{
+		z-index: 9999;
+	}
+
+	.site-nav:hover .trigger,
+	.site-nav:active .trigger
+	{
+		display: block;
+        padding-bottom: 5px;
+    }
+
+	.site-nav .page-link,
+	.site-nav .page-link
+	{
+		border-bottom: 3px solid transparent;
+    }
+
+	.site-nav:hover .page-link,
+	.site-nav:active .page-link
+	{
+		color: #000;
+
+    }
+
+	.site-nav .page-link:hover
+	{
+		border-bottom: 3px solid #333;
+
+    }
+
+}
+
+/* WS Quick Fix -- info page */
+	@media screen and (max-width: 600px)
+	{
+		.site-nav
+		{
+			z-index: 9999;
+		}
+
+		.site-nav:hover .trigger,
+		.site-nav:active .trigger
+		{
+			display: block;
+	        padding-bottom: 5px;
+	    }
+
+		.site-nav .page-link,
+		.site-nav .page-link
+		{
+			border-bottom: 3px solid transparent;
+	    }
+
+		.site-nav:hover .page-link,
+		.site-nav:active .page-link
+		{
+			color: #000;
+
+	    }
+
+		.site-nav .page-link:hover
+		{
+			border-bottom: 3px solid #333;
+
+	    }
+
+	}

@@ -22,10 +22,6 @@ window.onload = function() {
   initSticky();
 };
 
-document.onload = function() {
-  initNavFix();
-};
-
 function initScroller() {
 	i = 1;
 	featureScroller = document.querySelectorAll("#featureScroller");
@@ -72,10 +68,4 @@ function sticky() {
   } else {
     stickyNav.className = "nav--info-sections";
   }
-}
-
-function initNavFix() {
-  document.getElementById('siteNavTrigger').addEventListener('click', function()
-	{
-	});
 }

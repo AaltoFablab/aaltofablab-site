@@ -90,10 +90,14 @@ function resizeCal() {
       </div>
     {% endif %}
 
+    {% assign categories = page.categories %}
+    {% unless categories contains "facilities" %}
     <div class="machine--specs-item">
       <span class="bold">Model</span><br/>
       {{ page.name }}
     </div>
+    {% endunless %}
+
     {% assign specs = page.specs %}
     {% for spec in specs %}
       <div class="machine--specs-item">

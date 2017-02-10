@@ -107,6 +107,10 @@
     color: black;
   }
 
+  p {
+    margin-bottom: 30px;
+  }
+
   @media screen and (max-width:$iphone)
   {
     padding: 30px;

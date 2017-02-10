@@ -6,7 +6,7 @@ layout: default
 <script type='text/javascript'>
 
 $(document).ready(function() {
-  var calendarId = $('#calendar').data( "calendarId" )
+  var calendarId = $('#calendar').data( "calendarId" );
   $('#calendar').fullCalendar({
     // THIS KEY WILL NOT WORK FOR ANY OTHER SITE
 		// To make your own Google API key, follow the directions here:
@@ -20,6 +20,10 @@ $(document).ready(function() {
       agendaSeven: {
           type: 'agenda',
           duration: { days: 7 }
+      },
+      agendaOne: {
+          type: 'agenda',
+          duration: { days: 1 }
       }
     },
     allDaySlot: false,
@@ -49,11 +53,28 @@ $(document).ready(function() {
     eventColor: '#d14',
     eventTextColor: '#DA1044',
     displayEventTime: false,
+    contentHeight: 462,
     eventClick: function(event) {
       return false;
+    },
+    windowResize: function(view) {
+      resizeCal();
     }
   });
+
+  resizeCal();
 });
+
+function resizeCal() {
+  if(window.innerWidth < 768)
+  {
+    $('#calendar').fullCalendar( 'changeView', 'agendaOne' );
+    $('#calendar').fullCalendar('option', 'contentHeight', 462);
+  } else {
+    $('#calendar').fullCalendar( 'changeView', 'agendaSeven' );
+    $('#calendar').fullCalendar('option', 'contentHeight', 538);
+  }
+}
 
 </script>
 {% endif %}

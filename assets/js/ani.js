@@ -1,20 +1,24 @@
 var i;
+var n;
 var featureScroller;
 var anchors;
 var stickyNav;
 var stickyNavTop;
 
 document.onkeydown = function(e) {
-  switch (e.keyCode) {
-    case 37 :
-			// left arrow
-			scrollToLeft();
-			break;
-    case 39 :
-			// right arrow
-			scrollToRight();
-			break;
-	}
+  if(window.innerWidth < 768)
+  {
+    switch (e.keyCode) {
+      case 37 :
+  			// left arrow
+  			scrollToLeft();
+  			break;
+      case 39 :
+  			// right arrow
+  			scrollToRight();
+  			break;
+  	}
+  }
 };
 
 window.onload = function() {
@@ -25,6 +29,7 @@ window.onload = function() {
 function initScroller() {
 	i = 1;
 	featureScroller = document.querySelectorAll("#featureScroller");
+  n = document.querySelectorAll('.scrollElement').length;
   anchors = document.querySelectorAll('a[href*="#"]');
   anchors.forEach( function(anchor) {
     var targetName = anchor.href.substring(anchor.href.lastIndexOf('#') + 1);
@@ -39,13 +44,13 @@ function scrollToLeft()
 {
 	if(i > 1) {
 		i--;
-		Velocity(featureScroller, { left: "+=33.33333%"}, { duration: 600, easing: "easeInOutQuart" });
+		Velocity(featureScroller, { left: "+=100%"}, { duration: 600, easing: "easeInOutQuart" });
 	}
 }
 
 function scrollToRight() {
-	if(i < 3) {
-		Velocity(featureScroller, { left: "-=33.33333%"}, { duration: 600, easing: "easeInOutQuart" });
+	if(i < n) {
+		Velocity(featureScroller, { left: "-=100%"}, { duration: 600, easing: "easeInOutQuart" });
 		i++;
 	}
 }
@@ -67,5 +72,18 @@ function sticky() {
     stickyNav.className = "nav--info-sections sticky";
   } else {
     stickyNav.className = "nav--info-sections";
+  }
+}
+
+function open() {
+  var menuIcon = document.getElementById("siteNavTrigger");
+  var menuList = document.getElementById("siteNavList");
+
+  if(siteNavTrigger.className == "menu-icon open") {
+    siteNavTrigger.className = "menu-icon";
+    siteNavList.className = "trigger";
+  } else {
+    siteNavTrigger.className = "menu-icon open";
+    siteNavList.className = "trigger open";
   }
 }

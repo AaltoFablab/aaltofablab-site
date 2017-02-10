@@ -4,16 +4,15 @@
 
 .share--fullscreen {
   position: relative;
-  width: 300%;
+  width: 100%;
   overflow: hidden;
   font-size: 0pt;
   left: 0%;
+  position: absolute;
 
   @media screen and (max-width:$iphone)
   {
-    position: absolute;
     height: 100%;
-    width: 100%;
   }
 }
 
@@ -78,7 +77,7 @@
   overflow: hidden;
 
   &-controls {
-    width: 33.33333%;
+    width: 100%;
     height: 100%;
     background: none;
     position: absolute;
@@ -86,14 +85,9 @@
 
   &-scroller {
     position: absolute;
-    width: 100%;
+    width: 300%;
     height: 100%;
     overflow-x: visible;
-
-    @media screen and (max-width:$iphone)
-    {
-      width: 300%;
-    }
   }
 
   &-wrapper {
@@ -170,11 +164,11 @@
   width: 100% !important;
   font-size: 0pt;
   text-align: center;
+  margin-top: 640px;
 
   @media screen and (max-width:$iphone)
   {
-    padding-top: 200%;
-    margin-top: -72px;
+    margin-top: 100vh;
   }
 }
 

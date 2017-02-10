@@ -12,7 +12,7 @@ layout: default
 
   <div id="featureScroller" class="fullscreen--feature-scroller">
     {% for p in madeInFablab limit:3 %}
-    <div class="fullscreen--feature-wrapper">
+    <div class="fullscreen--feature-wrapper scrollElement">
       <div class="fullscreen--feature">
         <div class="fullscreen--feature-img" style="background-image:url({{ p.coverImage }})"></div>
 
@@ -36,6 +36,7 @@ layout: default
 </div>
 
 <div class="content--wrapper-share">
+
   <div class="content--share-category">
     <div class="share--category-heading madeinfablab">
       <a class="shadow madeinfablab"># made in fablab</a>

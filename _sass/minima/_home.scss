@@ -57,6 +57,11 @@
   line-height: 26px;
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width:$iphone)
+  {
+    display: none;
+  }
 }
 
 .homepage--fullscreen-stars {

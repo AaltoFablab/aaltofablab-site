@@ -96,6 +96,9 @@
   height: 120px;
   z-index: 3;
   bottom: 0;
+  animation-name: bounce;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 
   &:after {
     content: "";

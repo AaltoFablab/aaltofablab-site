@@ -109,7 +109,7 @@
     }
   }
 
-  @include media-query($on-palm) {
+  @media screen and (max-width:$iphone) {
     position: fixed;
     top: 0;
     right: 0;

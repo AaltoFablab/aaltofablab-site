@@ -63,6 +63,13 @@ layout: default
               {% endif %}
             </div>
             <div class="info--person-role">{{ p.role }}</div>
+            <div class="info--person-contact">
+              {% if p.phone %}
+                T: {{ p.phone }}
+              {% else %}
+                 –
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endfor %}

@@ -8,15 +8,14 @@ categories:
 
 <div markdown="1" class="info--contact-times">
 
-  |--------------------- |:--:|:----------------------- |
-  | MON&emsp;—&emsp;WEDS | &emsp;&emsp;&emsp;\|&emsp;&emsp;&emsp; | 10:00&emsp;—&emsp;16:00 |
-  | THURS | &emsp;&emsp;&emsp;\|&emsp;&emsp;&emsp; | 12:00&emsp;—&emsp;16:00 |
-  | FRI | &emsp;&emsp;&emsp;\|&emsp;&emsp;&emsp; | 10:00&emsp;—&emsp;16:00 |
+MON –<br/>WEDS | &emsp;&emsp; 10:00&emsp;—&emsp;16:00
+THURS &emsp;&emsp; | &emsp;&emsp; 12:00&emsp;—&emsp;16:00
+FRI &emsp;&emsp; | &emsp;&emsp; 10:00&emsp;—&emsp;16:00
 
 </div>
 
 <div class="info--contact-text">
-  WE HOLD INTRO COURSES EVERY MONDAY<br/>
+  WE HOLD COURSES EVERY MONDAY<br/>
   PLEASE RESERVE MACHINES IN ADVANCE
 </div>
 

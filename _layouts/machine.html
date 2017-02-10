@@ -5,7 +5,11 @@ layout: default
 {% if page.calendarID %}
 <script type='text/javascript'>
 
+var defaultCalView;
+
 $(document).ready(function() {
+  setDefaultCal();
+
   var calendarId = $('#calendar').data( "calendarId" );
   $('#calendar').fullCalendar({
     // THIS KEY WILL NOT WORK FOR ANY OTHER SITE
@@ -15,15 +19,17 @@ $(document).ready(function() {
     events: {
         googleCalendarId: calendarId
     },
-    defaultView: 'agendaSeven',
+    defaultView: defaultCalView,
     views: {
       agendaSeven: {
           type: 'agenda',
-          duration: { days: 7 }
+          duration: { days: 7 },
+          contentHeight: 462
       },
       agendaOne: {
           type: 'agenda',
-          duration: { days: 1 }
+          duration: { days: 1 },
+          contentHeight: 538
       }
     },
     allDaySlot: false,
@@ -61,8 +67,6 @@ $(document).ready(function() {
       resizeCal();
     }
   });
-
-  resizeCal();
 });
 
 function resizeCal() {
@@ -73,6 +77,15 @@ function resizeCal() {
   } else {
     $('#calendar').fullCalendar( 'changeView', 'agendaSeven' );
     $('#calendar').fullCalendar('option', 'contentHeight', 538);
+  }
+}
+
+function setDefaultCal() {
+  if(window.innerWidth < 768)
+  {
+    defaultCalView = 'agendaOne';
+  } else {
+    defaultCalView = 'agendaSeven';
   }
 }
 

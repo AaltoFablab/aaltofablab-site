@@ -26,6 +26,9 @@ instagram_username: AaltoFablab
 pinterest_url: AaltoFablab
 github_username:  AaltoFablab
 
+# Analytics
+google_analytics: UA-12555309-18
+
 # Build settings
 markdown: kramdown
 theme: minima

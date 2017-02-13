@@ -4,25 +4,29 @@ layout: default
 
 <div class="fullscreen courses--fullscreen">
   <div class="courses--feature-wrapper">
-    <div class="courses--feature-prefix">#FabAcademy</div>
+    <div class="courses--feature-prefix">DOM-E5045</div>
     <div class="courses--feature-title">
-      Fab Academy 2017
+      Digital Workshop Basics
     </div>
     <div class="courses--feature-subtitle">
-      Applications &amp; Implications of Digital Fabrication
+      A Hands-on Intro to Digital Fabrication in Fab Labs
     </div>
-    <a href="http://fabacademy.org/" target="_blank"><div class="events--feature-link">FabAcademy.org</div></a>
+    <a href="#DigitalWorkshopBasics"><div class="events--feature-link">View Course</div></a>
   </div>
 </div>
 
 <div class="content--wrapper">
-{% assign courses = site.courses | where: 'categories', 'courses' | sort: 'date'  %}
+{% assign courses = site.courses | where: 'categories', 'courses' | where: 'visible', 'true' | sort: 'date'  %}
 {% for course in courses %}
 
-  <div class="course--wrapper">
+  <div class="course--wrapper" id="{{ course.tags[0] | remove: '#' }}">
     <div class="course--image">
       <img src="{{ course.icon }}" />
-      <div class="course--image-link">View Course</div>
+      {% if course.oodiLink %}
+      <a href="{{ course.oodiLink }}" target="_blank">
+        <div class="course--image-link">View Course</div>
+      </a>
+      {% endif %}
     </div>
     <div class="course--content">
       <div class="course--content-title">{{ course.title | escape }}</div>

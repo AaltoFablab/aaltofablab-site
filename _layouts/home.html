@@ -59,7 +59,7 @@ layout: default
     <div class="home--courses-wrapper">
       <div class="home--courses-heading"><a href="/courses">Courses</a></div>
       <div class="home--courses-content">
-      {% assign courses = site.courses | where: 'categories', 'courses' | sort: 'date' %}
+      {% assign courses = site.courses | where: 'categories', 'courses' | where: 'visible', true | sort: 'date' %}
       {% for course in courses limit:3 %}
       <div class="home--courses-item">
         <div class="home--courses-icon">

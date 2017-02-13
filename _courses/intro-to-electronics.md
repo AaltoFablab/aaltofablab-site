@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Intro to Electronics
-date: '2017-01-19 00:00:00 +0000'
+title: Electronics Prototyping Workshop
+date: '2017-05-15 00:00:00 +0000'
+courseCode: n/a
+credits: 1
+visible: true
 categories:
   - courses
   - electronics
 tags:
   - "#Electronics"
-  - "#Arduino"
-  - "#Intro"
-  - "#DigitalWorkshopBasics"
-icon: /img/uploads/electronics-intro-icon.svg
+  - "#Programming"
+  - "#Prototyping"
+icon: /img/uploads/electronics-prototyping-icon.svg
 ---
 
-Get started with programmable electronics using Arduino! You'll learn how to prototype electronic devices using sensors, actuators and some basic coding. We'll start by guiding you through the process of making a simple 3-tone touch keyboard.
+This multi-day workshop will cover circuit and PCB design, prototyping styles, best practices, hardware/firmware coding in C, acquiring components and assembling a small prototype. The workshop is not designed for complete beginners to programming and it is assumed that participants can code in some language.

@@ -2,6 +2,8 @@
 layout: post
 title: Intro to 3D-Printing
 date: '2017-01-19 00:00:00 +0000'
+courseCode: n/a
+visible: false
 categories:
   - courses
   - 3D-printing

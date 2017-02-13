@@ -108,6 +108,11 @@
   width: 140px;
   margin-right: -180px;
   text-align: center;
+  z-index: 1;
+
+  & a {
+    text-decoration: none;
+  }
 
   &-link {
     @include bold-font(10pt);
@@ -118,8 +123,7 @@
     margin-top: 30px;
     color: black;
     text-transform: uppercase;
-    //display: block;
-    display: none;
+    display: block;
   }
 
   @media screen and (max-width:$iphone)
@@ -137,6 +141,7 @@
   position: relative;
   padding-left: 180px;
   font-size: 10pt;
+  z-index: 0;
 
   &-title {
     @include bold-font(18pt);

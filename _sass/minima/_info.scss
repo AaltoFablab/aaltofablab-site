@@ -69,7 +69,7 @@
     margin-bottom: 40px;
 
     table {
-      display: inline;
+      display: inline-table;
       text-align: center !important;
       vertical-align: middle;
       border-collapse: collapse;
@@ -216,7 +216,7 @@
 .info--person {
   &-wrapper {
     position: relative;
-    width: 33.33333%;
+    width: 33%;
     display: inline-block;
     box-sizing: border-box;
     margin: 0;

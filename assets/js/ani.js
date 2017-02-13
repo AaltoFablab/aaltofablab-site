@@ -31,11 +31,14 @@ function initScroller() {
 	featureScroller = document.querySelectorAll("#featureScroller");
   n = document.querySelectorAll('.scrollElement').length;
   anchors = document.querySelectorAll('a[href*="#"]');
+  anchors = [].slice.call(anchors);
   anchors.forEach( function(anchor) {
     var targetName = anchor.href.substring(anchor.href.lastIndexOf('#') + 1);
     var target = document.getElementById(targetName);
     anchor.addEventListener("click", function (e) {
+      e.preventDefault();
       Velocity(target, "scroll", { duration: 800, easing: "easeInOutQuart" });
+      return false
     });
   });
 }

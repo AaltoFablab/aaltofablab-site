@@ -14,19 +14,19 @@
     left: 0;
     padding: 20px;
     margin: -20px;
-    background-image: url('img/fab-academy-2017.jpg');
+    background-image: url('img/dark_lab-ultimaker2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(10px);
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
   }
 
   &:after {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.33);
     content: "";
     width: 100%;
     height: 100%;

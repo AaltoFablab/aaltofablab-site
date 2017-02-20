@@ -33,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Icon", name: "icon", widget: "image", optional: true}
-      - {label: "Status", name: "status", widget: "select", options: ["available", coming soon", "operational", "repair", "setup"], optional: true}
+      - {label: "Status", name: "status", widget: "select", options: ["available", "coming soon", "operational", "repair", "setup"], optional: true}
       - {label: "Calendar ID", name: "calendarID", widget: "string", optional: true}
       - {label: "Description", name: "body", widget: "markdown"}
   - name: "course"

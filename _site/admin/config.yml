@@ -36,6 +36,21 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Status", name: "status", widget: "select", options: ["available", "coming soon", "operational", "repair", "setup"], optional: true}
       - {label: "Calendar ID", name: "calendarID", widget: "string", optional: true}
       - {label: "Description", name: "body", widget: "markdown"}
+  - name: "event"
+    label: "events"
+    folder: "_events"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Event Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Start Time", name: "startTime", widget: "string"}
+      - {label: "End Time", name: "endTime", widget: "string"}
+      - {label: "Facebook Event", name: "facebookEvent", widget: "string", optional: true}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Event Description", name: "body", widget: "markdown"}
   - name: "course"
     label: "Courses"
     folder: "_courses"
@@ -52,7 +67,30 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Course Icon", name: "image", widget: "image"}
       - {label: "Oodi Link", name: "oodiLink", widget: "string", optional: true}
-      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Course Description", name: "body", widget: "markdown"}
+  - name: "news"
+    label: "News"
+    folder: "_news"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Content", name: "body", widget: "markdown"}
+  - name: "faqs"
+    label: "FAQs"
+    folder: "_faqs"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Content", name: "body", widget: "markdown"}
   - name: "settings"
     label: "Settings"
     create: false

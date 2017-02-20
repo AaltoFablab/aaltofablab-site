@@ -19,8 +19,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Cover Image", name: "coverImage", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    card: {type: "image", image: "coverImage", text: "title"}
+      - {label: "Content", name: "body", widget: "markdown"}
+    card: {type: "image", image: coverImage, text: "title"}
   - name: "machine"
     label: "Machines"
     folder: "_machines"
@@ -34,11 +34,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Icon", name: "icon", widget: "image", optional: true}
-      - {label: "Status", name: "status", widget: "select", options: ["coming soon", "operational", "repair", "setup"]}
-      - {label: "Calendar ID", name: "calendarID", widget: "string"}
-      - {label: "Specifications", name: "specs", widget: "list"}
-      - {label: "Body", name: "body", widget: "markdown"}
-    card: {type: "image", image: "image", text: "Name"}
+      - {label: "Status", name: "status", widget: "select", options: ["coming soon", "operational", "repair", "setup"], optional: true}
+      - {label: "Calendar ID", name: "calendarID", widget: "string", optional: true}
+      - {label: "Specifications", name: "specs", widget: "object"}
+      - {label: "Description", name: "body", widget: "markdown"}
+    card: {type: "image", image: "image", text: "name"}
   - name: "course"
     label: "Courses"
     folder: "_courses"
@@ -54,8 +54,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Course Icon", name: "icon", widget: "image"}
-      - {label: "Oodi Link", name: "oodiLink", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Oodi Link", name: "oodiLink", widget: "string", optional: true}
+      - {label: "Description", name: "body", widget: "markdown"}
     card: {type: "image", image: "icon", text: "title"}
   - name: "settings"
     label: "Settings"

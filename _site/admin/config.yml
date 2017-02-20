@@ -20,7 +20,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Cover Image", name: "image", widget: "image"}
       - {label: "Content", name: "body", widget: "markdown"}
-    card: {type: "image", image: coverImage, text: "title"}
   - name: "machine"
     label: "Machines"
     folder: "_machines"
@@ -36,9 +35,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Icon", name: "icon", widget: "image", optional: true}
       - {label: "Status", name: "status", widget: "select", options: ["coming soon", "operational", "repair", "setup"], optional: true}
       - {label: "Calendar ID", name: "calendarID", widget: "string", optional: true}
-      - {label: "Specifications", name: "specs", widget: "object", fields: {label: "Build Volume", name: "technology", widget: "string"}}
+      - {label: "Specifications", name: "specs", widget: "object", fields: ["Technology", "Build Volume"]}
       - {label: "Description", name: "body", widget: "markdown"}
-    card: {type: "image", image: "image", text: "name"}
   - name: "course"
     label: "Courses"
     folder: "_courses"
@@ -53,10 +51,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Visible", name: "visible", widget: "select", options: ["true", "false"]}
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Course Icon", name: "icon", widget: "image"}
+      - {label: "Course Icon", name: "image", widget: "image"}
       - {label: "Oodi Link", name: "oodiLink", widget: "string", optional: true}
       - {label: "Description", name: "body", widget: "markdown"}
-    card: {type: "image", image: "icon", text: "title"}
   - name: "settings"
     label: "Settings"
     create: false

@@ -12,7 +12,7 @@ tags:
   - "#Electronics"
   - "#Programming"
   - "#Prototyping"
-icon: /img/uploads/electronics-prototyping-icon.svg
+image: /img/uploads/electronics-prototyping-icon.svg
 ---
 
 This multi-day workshop will cover circuit and PCB design, prototyping styles, best practices, hardware/firmware coding in C, acquiring components and assembling a small prototype. The workshop is not designed for complete beginners to programming and it is assumed that participants can code in some language.

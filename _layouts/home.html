@@ -63,7 +63,7 @@ layout: default
       {% for course in courses limit:3 %}
       <div class="home--courses-item">
         <div class="home--courses-icon">
-          <img src="{{ course.icon }}" />
+          <img src="{{ course.image }}" />
         </div>
         <div class="home--courses-title">{{ course.title | escape }}</div>
         <div class="home--courses-tags">{{ course.tags | join: "&nbsp;&nbsp;" }}</div>

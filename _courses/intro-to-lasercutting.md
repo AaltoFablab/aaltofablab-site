@@ -12,7 +12,7 @@ tags:
   - "#Lasercutting"
   - "#Intro"
   - "#DigitalWorkshopBasics"
-icon: /img/uploads/lasercutter-intro-icon.svg
+image: /img/uploads/lasercutter-intro-icon.svg
 ---
 
 Learn the basics of Lasercutting, ready for independent work. This hands-on intro course will give you everything you need to work confidently and safely with our lasercutter, and is essential for anyone wanting to work independently.

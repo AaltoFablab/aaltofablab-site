@@ -14,7 +14,7 @@ tags:
   - "#Lasercutting"
   - "#CNC"
   - "#Electronics"
-icon: /img/uploads/digital-fabrication-studio-icon.svg
+image: /img/uploads/digital-fabrication-studio-icon.svg
 oodiLink: https://oodi.aalto.fi/a/opintjakstied.jsp?OpinKohd=1116993234
 ---
 

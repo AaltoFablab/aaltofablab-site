@@ -35,7 +35,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Icon", name: "icon", widget: "image", optional: true}
       - {label: "Status", name: "status", widget: "select", options: ["coming soon", "operational", "repair", "setup"], optional: true}
       - {label: "Calendar ID", name: "calendarID", widget: "string", optional: true}
-      - {label: "Specifications", name: "specs", widget: "object", fields: ["Technology", "Build Volume"]}
+      - label: "Specifications"
+        name: "specs"
+        widget: "object"
+        fields:
+          - {label: "Specification", name: "spec", widget: "string"}
+          - {label: "Value", name: "value", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
   - name: "course"
     label: "Courses"

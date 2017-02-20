@@ -7,45 +7,63 @@ media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+    label: "Posts" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    meta: # The fields each document in this collection have
       - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
+      - {label: "Pre-title", name: "pre-title", widget: "string"}
+      - {label: "By", name: "by", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Cover Image", name: "coverImage", widget: "image"}
+    fields:
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "machines" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Machine" # Used in the UI, ie.: "New Post"
-    folder: "_machines" # The path to the folder where the documents are stored
+  - name: "machine"
+    label: "Machines"
+    folder: "_machines"
     slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    create: true
+    meta:
       - {label: "Layout", name: "layout", default: "machine", widget: "hidden"}
-      - {label: "Name", name: "name", widget: "string", tagname: "h1"}
+      - {label: "Nav", name: "nav", default: "light", widget: "hidden"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Subheading", name: "sub", widget: "string"}
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Image", name: "image", widget: "image"}
+      - {label: "Icon", name: "icon", widget: "image", optional: true}
+      - {label: "Status", name: "status", widget: "select", options: ["coming soon", "operational", "repair", "setup"]}
+      - {label: "Calendar ID", name: "calendarID", widget: "string"}
+      - {label: "Specifications", name: "specs", widget: "list"}
+    fields:
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "courses" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Course" # Used in the UI, ie.: "New Post"
-    folder: "_courses" # The path to the folder where the documents are stored
+  - name: "course"
+    label: "Courses"
+    folder: "_courses"
     slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    create: true
+    meta:
       - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Course Date", name: "date", widget: "datetime"}
+      - {label: "Course Code", name: "courseCode", widget: "string"}
+      - {label: "Credits", name: "credits", widget: "number"}
+      - {label: "Visible", name: "visible", widget: "select", options: ["true", "false"]}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Course Icon", name: "icon", widget: "image"}
+      - {label: "Oodi Link", name: "oodiLink", widget: "string"}
+    fields:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "settings"
     label: "Settings"
     create: false
     files:
       - name: "general"
-        label: "General settings"
+        label: "Site Settings"
         file: "_data/settings.json"
         fields:
-          - {label: "Main site title", name: "site_title", widget: "string"}
-          - {label: "Number of fronpage posts", name: "post_count", widget: "number"}
+          - {label: "Site Title", name: "site_title", widget: "string"}
           - {label: "Site cover image", name: "cover", widget: "image"}

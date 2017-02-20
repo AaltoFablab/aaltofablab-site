@@ -33,14 +33,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Icon", name: "icon", widget: "image", optional: true}
-      - {label: "Status", name: "status", widget: "select", options: ["coming soon", "operational", "repair", "setup"], optional: true}
+      - {label: "Status", name: "status", widget: "select", options: [null, "coming soon", "operational", "repair", "setup"], optional: true}
       - {label: "Calendar ID", name: "calendarID", widget: "string", optional: true}
       - label: "Specifications"
         name: "specs"
         widget: "object"
         fields:
-          - {label: "Specification", name: "spec", widget: "string"}
-          - {label: "Value", name: "value", widget: "string"}
+          - {label: "Technology", name: "Technology", widget: "string"}
+          - {label: "Build Volume", name: "Build Volume", widget: "string"}
+          - {label: "Resolution", name: "Resolution", widget: "string"}
+          - {label: "Materials", name: "Materials", widget: "string"}
+          - {label: "File Formats", name: "File Formats", widget: "string"}
+          - {label: "Software", name: "Software", widget: "string"}
       - {label: "Description", name: "body", widget: "markdown"}
   - name: "course"
     label: "Courses"

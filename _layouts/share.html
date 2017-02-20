@@ -14,7 +14,7 @@ layout: default
     {% for p in madeInFablab limit:3 %}
     <div class="fullscreen--feature-wrapper scrollElement">
       <div class="fullscreen--feature">
-        <div class="fullscreen--feature-img" style="background-image:url({{ p.coverImage }})"></div>
+        <div class="fullscreen--feature-img" style="background-image:url({{ p.image }})"></div>
 
         <div class="fullscreen--feature-content">
           <div class="fullscreen--feature-prefix">
@@ -43,7 +43,7 @@ layout: default
     </div>
   {% for p in madeInFablab %}
     <div class="post--wrapper three-col post--wrapper-madeinfablab">
-      <div class="post--image" style="background-image:url({{ p.coverImage }})"></div>
+      <div class="post--image" style="background-image:url({{ p.image }})"></div>
 
       <div class="post--content">
         <div class="post--content-title">{{ p.title | escape }}</div>
@@ -60,7 +60,7 @@ layout: default
     {% assign howTo = site.posts | where: 'categories', 'howto' %}
     {% for p in howTo %}
     <div class="post--wrapper two-col post--wrapper-howto">
-      <div class="post--image" style="background-image:url({{ p.coverImage }})">
+      <div class="post--image" style="background-image:url({{ p.image }})">
         <div class="post--image-tag"># how to</div>
         <div class="post--image-title">{{ p.title | escape }}</div>
         <div class="post--image-subtitle">{{ p.subtitle | escape }}</div>
@@ -80,7 +80,7 @@ layout: default
     {% assign fabAcademy = site.posts | where: 'categories', 'fabacademy' %}
     {% for p in fabAcademy %}
     <div class="post--wrapper three-col post--wrapper-fabacademy">
-      <div class="post--image" style="background-image:url({{ p.coverImage }})"></div>
+      <div class="post--image" style="background-image:url({{ p.image }})"></div>
 
       <div class="post--content">
         <div class="post--content-title">{{ p.title | escape }}</div>

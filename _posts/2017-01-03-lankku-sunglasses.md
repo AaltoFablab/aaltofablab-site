@@ -6,7 +6,7 @@ by: Lankku Helsinki
 date: 2017-01-03T16:19:30.821Z
 categories:
   - "madeinfablab"
-coverImage: /img/uploads/lankku-sunglasses.jpg
+image: /img/uploads/lankku-sunglasses.jpg
 ---
 
 Lankku Sunglasses are made from upcycled broken skateboard decks, giving each pair beautifully unique colour bands running through them. Blanks of prepared skateboard ply are lasercut to the rough form, before a lot of hand shaping!

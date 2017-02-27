@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign events = site.events | where: 'categories', 'events' | where: 'categories', 'public' | sort: 'date'  %}
+{% assign events = site.events | where: 'categories', 'events' | where: 'categories', 'public' | sort: 'date' | reverse %}
 
 <div class="fullscreen events--fullscreen">
   <div class="events--feature-wrapper">

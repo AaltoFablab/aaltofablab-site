@@ -42,7 +42,7 @@ layout: default
     <div class="home--events-wrapper">
       <div class="home--events-heading"><a href="/events">Events</a></div>
       <div class="home--events-content">
-      {% assign events = site.events | where: 'categories', 'events' | sort: 'date' %}
+      {% assign events = site.events | where: 'categories', 'events' | sort: 'date' | reverse %}
       {% for event in events limit:3 %}
       <div class="home--events-item">
         <div class="home--events-tile">

@@ -2,7 +2,8 @@
 layout: post
 title: Aalto Fablab Open Day | 02.03!
 date: 2017-02-27T12:35:42+02:00
-categories: null
+categories:
+  - "news"
 image: null
 ---
 

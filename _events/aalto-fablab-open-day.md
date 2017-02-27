@@ -1,12 +1,16 @@
 ---
-endTime: '17:00'
 layout: post
-date: 03/02/2017 12:00 PM
+title: Aalto Fablab Open Day
+date: 2017-03-02 00:00:00 +0000
+categories:
+- events
+- public
+endTime: '17:00'
 startTime: '12:00'
 facebookEvent: 'https://www.facebook.com/events/1261943467232628/'
-title: Aalto Fablab Open Day
-tags: null
-categories: null
+tags:
+  - "@AaltoFablab"
+  - "#madeinfablab"
 ---
 
 It's been a while since our last public open day – About time we do something about it again!

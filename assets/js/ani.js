@@ -30,7 +30,7 @@ function initScroller() {
 	i = 1;
 	featureScroller = document.querySelectorAll("#featureScroller");
   n = document.querySelectorAll('.scrollElement').length;
-  anchors = document.querySelectorAll('a[href*="#"]');
+  anchors = document.querySelectorAll('a[href^="#"]');
   anchors = [].slice.call(anchors);
   anchors.forEach( function(anchor) {
     var targetName = anchor.href.substring(anchor.href.lastIndexOf('#') + 1);

@@ -15,3 +15,5 @@ The Lab is free to use, but if you which to use [materials](../lab#misc) from ou
 We will never ask for money to use the Fablab, but we do ask that you respect our philosophy of Open-Knowledge sharing by helping others, documenting your work and sharing what you have learnt. Check out the [Documentation](#documentation) section for more details.
 
 Fab Labs are places were experimentation is encouraged, but never at the expense of safety. You must ensure you are properly trained before using the machines or tools. If you are unsure, speak to the Studio Master or one of the Lab Assistants.
+
+By entering the Fablab Premises and using the facilities, you agree to the terms of our [Disclaimer](#disclaimer).

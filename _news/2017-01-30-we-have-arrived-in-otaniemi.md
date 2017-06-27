@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news
 title: We Have Arrived in Otaniemi!
 date: 2017-01-30T16:19:30.821Z
 categories:

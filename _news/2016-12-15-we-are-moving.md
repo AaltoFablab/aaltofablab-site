@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news
 title: We Are Moving
 date: 2016-12-15T16:19:30.821Z
 categories:

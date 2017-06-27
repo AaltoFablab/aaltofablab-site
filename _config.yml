@@ -55,7 +55,7 @@ collections:
   machines:
     output: true
   news:
-    output: false
+    output: true
 
 # OpenGraph
 fb_app_id: "133268030521979"

@@ -15,7 +15,7 @@ The applicant should have some knowledge about digital design and digital manufa
 Please send your short application with a CV to Solomon Embafrash by 15th of July 2017. More information from Solomon Embafrash.
 
 Firstname.lastname@aalto.fi, +358 50 5933203
-https://vipa.mol.fi/sivariweb_public/pages/servplace_info.jsf?id=538841
+[https://vipa.mol.fi/sivariweb_public/pages/servplace_info.jsf?id=538841]
 
 
 **In Finnish**
@@ -26,4 +26,4 @@ Hakijalla pitää olla digitaalisen suunnittelun tuntemusta samoin kuin hänen t
 
 Sivari auttaa Fablab työpajamestaria päivittäistyössä. Työkieli on pääasiassa englanti, josta syystä hakijalla täytyy pystyä kommunikoimaan sujuvasti suullisesti ja kirjallisesti.
 
-Lähetä lyhyt hakemus ja CV Solomon Embafrashille 31.5.2017 mennessä. Solomon Embasfrashilta saa myös lisätietoa paikasta. etunimi.sukunimi@aalto.fi, +358 50 5933203.
+Lähetä lyhyt hakemus ja CV Solomon Embafrashille 15.7.2017 mennessä. Solomon Embasfrashilta saa myös lisätietoa paikasta. etunimi.sukunimi@aalto.fi, +358 50 5933203.

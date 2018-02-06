@@ -14,6 +14,6 @@ calendarID: 5f2tn65qu5m1khujmhm82q2lcg
 ---
 The workhorse of any Fab Lab is it's laser cutter! Cut, score and engrave onto sheet materials and flat surfaces using a precisely controlled CO2 laser. Requiring only 2D data to control the cutting path means the laser cutter has a very low barrier to entry, so you can very quickly go from idea to finished object.
 
-Sheet size: 900 x 600 mm
+**Sheet size:** 900 x 600 mm
 
-Materials: Plywood, MDF, Acrylic, PE, Cardboard, Papers, Fabric.
+**Materials:** Plywood, MDF, Acrylic, PE, Cardboard, Papers, Fabric.

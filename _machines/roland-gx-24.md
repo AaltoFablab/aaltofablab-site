@@ -17,4 +17,4 @@ categories:
   - vinylcutter
 ---
 
-Cut your own stickers, signage, screening masks and even flexible circuits with the Roland Vinyl Cutter. Probably the easiest machine to use in the Fablab, it eats 2D design files in  vector format and spits out perfectly cut tape!
+Cut your own stickers, signage, screening masks and even flexible circuits with the Roland Vinyl Cutter. Probably the easiest machine to use in the Fablab, it eats 2D design files in vector format and spits out perfectly cut tape! Note this machine only cuts out mono-color vinyls. For multicolor prints you would need to overlay multiple layers. 

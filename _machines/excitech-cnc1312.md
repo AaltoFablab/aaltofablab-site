@@ -8,7 +8,6 @@ categories:
   - cnc
   - 3-axis
 image: /img/uploads/digima-shg1212.jpg
-status: coming soon
 calendarID: c1t8n46k7sdgk7sj9041adfle0
 ---
 

@@ -6,7 +6,7 @@ name: Roland GX-24
 specs:
   Type: Desktop Vinyl Cutter
   Cutting Area: 584 x 25000 mm
-  Materials: '3M Self-Adhesive Vinyl, Paper'
+  Materials: '3M Self-Adhesive Vinyl, Paper, Copper Tape'
   File Formats: .ai .pdf .svg
   Software: Adobe Illustrator + Roland Cut Studio
 calendarID: peaq89t93luk1asat2cq5ll1co

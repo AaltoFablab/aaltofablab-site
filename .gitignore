@@ -2,3 +2,4 @@ _site/*
 !_site/admin
 .sass-cache
 .jekyll-metadata
+.DS_Store

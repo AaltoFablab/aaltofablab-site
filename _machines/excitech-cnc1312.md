@@ -15,4 +15,6 @@ specs: {Type: '3-Axis Router', Working Volume: '1220 x 1220 x 400 mm', Tool Dia.
 ---
 
 Our new large-format CNC Router can take a half-sheet of standard panel material (1220 mm x 1220 mm) and has an increased Z-axis capacity to enable even bigger 3D-carved projects (technically up to 400 mm). Incredible accuracy (± 0.05 mm) and finish quality can be achieve with the correct handling. Great for larger projects using heavier solid materials.
-!This machine is loud and causes a lot of vibration in the floor. Therefore it's important to also book the self-recording studio (kd150) during the same time so that recording sessions are not interrupted. 
+!This machine is loud and causes a lot of vibration in the floor. Therefore it's important to also book the self-recording studio (kd150) during the same time so that recording sessions are not interrupted.
+
+<iframe src="https://takeout.aalto.fi/embed/606026" width=100% height=500>

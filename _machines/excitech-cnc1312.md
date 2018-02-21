@@ -19,5 +19,5 @@ Our new large-format CNC Router can take a half-sheet of standard panel material
 
 
 {% raw %}
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://takeout.aalto.fi/606026"></iframe>
+<iframe src="https://takeout.aalto.fi/606026" width="100%" height="500"></iframe>
 {% endraw %}

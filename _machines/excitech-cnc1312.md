@@ -18,3 +18,6 @@ Our new large-format CNC Router can take a half-sheet of standard panel material
 !This machine is loud and causes a lot of vibration in the floor. Therefore it's important to also book the self-recording studio (kd150) during the same time so that recording sessions are not interrupted.
 
 
+{% raw %}
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://takeout.aalto.fi/606026"></iframe>
+{% endraw %}

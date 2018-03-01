@@ -18,5 +18,13 @@ This machine is loud and causes a lot of vibration in the floor so it's importan
 
 
 {% raw %}
-<a href="https://takeout.aalto.fi/606028"><iframe src="https://takeout.aalto.fi/embed/606028" width="100%" height="380"></iframe></a>
+
+<iframe src="https://takeout.aalto.fi/embed/606028" width="100%" height="380"></iframe></a>
 {% endraw %}
+
+
+
+<div style="position:relative;">
+<iframe src="https://takeout.aalto.fi/606028" width="100%" height="385" />
+<a href="https://takeout.aalto.fi/606028" style="position:absolute; top:0; left:0; display:inline-block; width:100%; height:385; z-index:5;"></a>
+</div>

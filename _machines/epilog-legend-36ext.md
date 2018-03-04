@@ -21,7 +21,7 @@ The workhorse of any Fab Lab is it's laser cutter! Cut, score and engrave onto s
 File settings:
 Use RGB color profile (e.g. Red is (255,0,0), Black is (255,255,255)) for your documents if you want to use multiple settings for vector lines or rasters, these settings are found in the Color Mapping tab in the laser cutter (driver) settings.
 
-*All laster power and speed settings can be found on the DESKTOP in the file: LASER_CUT_SETTINGS.txt*
+*All laser power and speed settings can be found on the DESKTOP in the file: LASER_CUT_SETTINGS.txt*
 Cutting / Vector: Line width or stroke thickness less than 0.01 mm.
 Engraving / Raster: Anything thicker than the above mentioned stroke thickness.
 

@@ -15,6 +15,9 @@ status: operational
 
 The workhorse of any Fab Lab is it's laser cutter! Cut, score and engrave onto sheet materials and flat surfaces using a precisely controlled CO2 laser. Requiring only 2D data to control the cutting path means the laser cutter has a very low barrier to entry, so you can very quickly go from idea to finished object.
 
+[Reservations from here](https://takeout.aalto.fi/606026)
+{% raw %} <iframe src="https://takeout.aalto.fi/embed/606026" width="100%" height="380"></iframe> {% endraw %}
+
 File settings:
 Use RGB color profile (e.g. Red is (255,0,0), Black is (255,255,255)) for your documents if you want to use multiple settings for vector lines or rasters, these settings are found in the Color Mapping tab in the laser cutter (driver) settings.
 

@@ -7,7 +7,7 @@ categories:
   - machines
   - cnc
   - 3-axis
-image: /img/uploads/digima-shg1212.jpg
+image: /img/uploads/CNC_18.jpg
 status: operational
 specs: {Type: '3-Axis Router', Working Volume: '1220 x 1220 x 400 mm', Resolution: '± 0.05mm', Tool Dia.: '3 - 12 mm', Materials: 'Solid Wood, Plywood, MDF, Polyurethane Block (SikaBlock), Extruded Polystyrene Foam, Machinable Wax', File Formats: '.3dm .dxf .dwg .f3d .sldprt', Software: 'Fusion 360, RhinoCAM, Vcarve, Mach3'}
 ---
@@ -18,7 +18,5 @@ The [self-recording studio (K015d)](https://booking.aalto.fi/kalenterit2/index.p
 
 [Reservations from here](https://takeout.aalto.fi/606028)
 
-{% raw %}
-<iframe src="https://takeout.aalto.fi/embed/606028" width="100%" height="390" frameborder="0"></iframe>
-{% endraw %}
+{% raw %} <iframe src="https://takeout.aalto.fi/embed/606028" width="100%" height="390" frameborder="0"></iframe> {% endraw %}
 

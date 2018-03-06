@@ -8,7 +8,7 @@ categories:
   - misc
   - facilities
 image: /img/uploads/materials.jpg
-specs: {Sheet Materials: 'Acrylic, Corrugated Cardboard, Paper, MDF, Plywood, Polypropylene', 3D-Printer Filaments: 'ABS, PLA, PVA, NinjaFlex', SLA Resins: 'Formlabs Standard Resins, Castable Resin, Flexible Resin'}
+specs: {Sheet Materials: 'Acrylic, Corrugated Cardboard, Paper, MDF, Plywood, Polypropylene', 3D-Printer Filaments: 'ABS, PLA, PVA, NinjaFlex, Bronzefill', SLA Resins: 'Formlabs Standard Resins, Castable Resin, Flexible Resin'}
 
 ---
 
@@ -16,4 +16,5 @@ We hold a stock of commonly used sheet materials and 3D-printer consumables avai
 
 Unfortunately, as our stock is limited, our materials are sold for use in the Fablab with our machines and not external workshops.
 
-A full list of our stock materials and prices will appear soon!
+
+image: /img/uploads/Materialprices.jpg

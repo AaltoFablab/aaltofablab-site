@@ -9,7 +9,6 @@ specs:
   Materials: '3M Self-Adhesive Vinyl, Paper, Copper Tape'
   File Formats: .ai .pdf .svg
   Software: Adobe Illustrator + Roland Cut Studio
-calendarID: peaq89t93luk1asat2cq5ll1co
 image: /img/uploads/roland-gx-24.jpg
 categories:
   - machines
@@ -17,4 +16,8 @@ categories:
   - vinylcutter
 ---
 
-Cut your own stickers, signage, screening masks and even flexible circuits with the Roland Vinyl Cutter. Probably the easiest machine to use in the Fablab, it eats 2D design files in vector format and spits out perfectly cut tape! Note this machine only cuts out mono-color vinyls. For multicolor prints you would need to overlay multiple layers. 
+Cut your own stickers, signage, screening masks and even flexible circuits with the Roland Vinyl Cutter. Probably the easiest machine to use in the Fablab, it eats 2D design files in vector format and spits out perfectly cut tape! Note this machine only cuts out mono-color vinyls. For multicolor prints you would need to overlay multiple layers.
+
+[Reservations from takeout.aalto.fi/fablab](https://takeout.aalto.fi/606027)
+
+{% raw %} <iframe src="https://takeout.aalto.fi/embed/606027" width="100%" height="390" frameborder="0"></iframe> {% endraw %}

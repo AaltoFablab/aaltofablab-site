@@ -18,7 +18,8 @@ Unfortunately, as our stock is limited, our materials are sold for use in the Fa
 
 
 {% raw %}
-<a href=”http://fablab.aalto.fi/img/uploads/Materialprices.pdf”>
-<img border="0" alt="Material Prices Poster" img src="http://fablab.aalto.fi/img/uploads/Materialprices.jpg" width=”100%” height=”100%” >
+<img src="http://fablab.aalto.fi/img/uploads/Materialprices.jpg">
+<a href="http://fablab.aalto.fi/img/uploads/Materialprices.pdf">
+<img border="0" alt="Material Prices Poster" img src="http://fablab.aalto.fi/img/uploads/Materialprices.jpg" width="100%" height="100%" >
 </a>
 {% endraw %}

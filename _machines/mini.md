@@ -10,7 +10,6 @@ categories:
 image: /img/uploads/mini.jpg
 status: Operational
 specs: {Technology: 'FFF', Build Volume: '152 x 152 x 158 mm', Resolution: '0.05 mm to 0.50 mm', Materials: 'PLA, PP, Nylon, PETT, PETG, WoodFill, BronzeFill', File Formats: '.stl .gcode', Software: 'Cura Lulzbot'}
-
 ---
 
 The Lulzbot Mini is small but it's quality is on par with the Ultimaker 2+.

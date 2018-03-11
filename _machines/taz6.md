@@ -10,7 +10,6 @@ categories:
 image: /img/uploads/mini3.jpg
 icon: /img/uploads/mini3.jpg
 status: available
-calendarID: ' '
 ---
 
 The Lulzbot TAZ 6 is the literal big brother of the Lulzbot Mini with all the same bells and whistles. The combination of self-leveling, self-cleaning and heated PEI print surface make for reliable and high quality prints. 

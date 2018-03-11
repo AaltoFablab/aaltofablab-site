@@ -18,4 +18,4 @@ The Ultimaker 2 is seen by many as the benchmark standard for desktop Fused Fila
 
 [Login to takeout.aalto.fi/fablab to reserve this machine](https://takeout.aalto.fi/605971)
 
-{% raw %} <iframe frameBorder='0' seamless='seamless' src="https://takeout.aalto.fi/embed/605971" width="100%" height="390" frameborder="0"></iframe> {% endraw %}
+{% raw %} <iframe src="https://takeout.aalto.fi/embed/605971" width="100%" height="390" frameborder="0" seamless="seamless"></iframe> {% endraw %}

@@ -9,7 +9,7 @@ categories:
   - fff
 image: /img/uploads/ultimaker-2-extended.jpg
 status: operational
-specs: {Technology: 'FFF', Build Volume: '223 x 223 x 305 mm', Extruder: 'Single Olsson Block', Resolution: '20 - 200 microns', Materials: 'PLA', File Formats: '.stl .obj', Software: 'Cura'}
+specs: {Technology: 'FFF', Build Volume: '223 x 223 x 305 mm', Extruder: 'Single Olsson Block', Resolution: '20 - 200 microns', Nozzle: '0.4 mm', Materials: 'PLA, ABS, PP, NYLON, PETT, PETG, WOODFILL, BRONZEFILL', File Formats: '.stl .obj', Software: 'Cura'}
 
 ---
 
@@ -18,4 +18,4 @@ The Ultimaker 2 is seen by many as the benchmark standard for desktop Fused Fila
 
 [Login to takeout.aalto.fi/fablab to reserve this machine](https://takeout.aalto.fi/605971)
 
-{% raw %} <iframe src="https://takeout.aalto.fi/embed/605971" width="100%" height="390" frameborder="0"></iframe> {% endraw %}
+{% raw %} <iframe frameBorder='0' seamless='seamless' src="https://takeout.aalto.fi/embed/605971" width="100%" height="390" frameborder="0"></iframe> {% endraw %}

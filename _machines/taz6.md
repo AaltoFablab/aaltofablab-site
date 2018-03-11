@@ -14,9 +14,9 @@ specs: {Technology: 'FFF', Build Volume: '280 x 280 x 250 mm', Resolution: '0.05
 
 The Lulzbot TAZ 6 is the literal big brother of the Lulzbot Mini with all the same bells and whistles. The combination of self-leveling, self-cleaning and heated PEI print surface make for reliable and high quality prints. 
 
-{% raw %} <iframe src="https://takeout.aalto.fi/embed/606021" width="100%" height="390" frameborder="0" seamless="seamless"></iframe> {% endraw %}
+{% raw %} <iframe src="https://takeout.aalto.fi/embed/606021" width="100%" height="390" frameborder="0"></iframe> {% endraw %}
 [Reserve Lulzbot TAZ6 AKA Rick](https://takeout.aalto.fi/606021)
 
 
-{% raw %} <iframe src="https://takeout.aalto.fi/embed/606022" width="100%" height="390" frameborder="0" seamless="seamless"></iframe> {% endraw %}
+{% raw %} <iframe src="https://takeout.aalto.fi/embed/606022" width="100%" height="390" frameborder="0"></iframe> {% endraw %}
 [Reserve Lulzbot TAZ6 AKA Morty](https://takeout.aalto.fi/606022)

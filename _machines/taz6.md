@@ -8,8 +8,9 @@ categories:
   - 3d-printers
   - fff
 image: /img/uploads/mini3.jpg
-status: Operational
-specs: {Technology: 'FFF', Build Volume: '280 x 280 x 250 mm', Resolution: '0.05 mm to 0.50 mm', Nozzle:'0.6', Materials: 'PLA, PP, Nylon, PETT, PETG, WoodFill, BronzeFill', File Formats: '.stl .gcode', Software: 'Cura Lulzbot'}
+icon: /img/uploads/mini3.jpg
+status: available
+calendarID: ' '
 ---
 
 The Lulzbot TAZ 6 is the literal big brother of the Lulzbot Mini with all the same bells and whistles. The combination of self-leveling, self-cleaning and heated PEI print surface make for reliable and high quality prints. 

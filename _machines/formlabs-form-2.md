@@ -13,7 +13,7 @@ specs: {Technology: 'SLA', Build Volume: '145 x 145 x 175 mm', Resolution: '25 -
 
 ---
 
-The big brother of the [Formlabs Form 1](../machines/formlabs-form-1), the Form 2 can produce highly detailed prints with greater reliability. Using Stereolithography (SLA) to solidify successive slices of a 3D object in photopolymer resin, just as in the Form 1, but now with an upgraded peel system, heated resin tank, automatic resin filler and a touchscreen interface. 
+The big brother of the Formlabs Form 1, the Form 2 can produce highly detailed prints with greater reliability. Using Stereolithography (SLA) to solidify successive slices of a 3D object in photopolymer resin, just as in the Form 1, but now with an upgraded peel system, heated resin tank, automatic resin filler and a touchscreen interface. 
 
 [Login to Aalto Takeout to reserve this machine.](https://takeout.aalto.fi/606023){:target="_blank"}
 

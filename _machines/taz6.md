@@ -16,8 +16,8 @@ The Lulzbot TAZ 6 is the literal big brother of the Lulzbot Mini with all the sa
 
 
 {% raw %} <iframe src="https://takeout.aalto.fi/embed/606021" width="100%" height="390" frameborder="0"></iframe> {% endraw %}
-[Reserve Lulzbot TAZ6 AKA Rick](https://takeout.aalto.fi/606021)
+[Reserve Lulzbot TAZ6 AKA Rick](https://takeout.aalto.fi/606021){:target="_blank"}
 
 
 {% raw %} <iframe src="https://takeout.aalto.fi/embed/606022" width="100%" height="390" frameborder="0"></iframe> {% endraw %}
-[Reserve Lulzbot TAZ6 AKA Morty](https://takeout.aalto.fi/606022)
+[Reserve Lulzbot TAZ6 AKA Morty](https://takeout.aalto.fi/606022){:target="_blank"}

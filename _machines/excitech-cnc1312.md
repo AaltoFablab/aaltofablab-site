@@ -16,7 +16,7 @@ Our large-format CNC Router can take a half-sheet of standard panel material and
 
 The [self-recording studio (K015d)](https://booking.aalto.fi/kalenterit2/index.php?kt=tila%2C25212&av=180219180225180221&laji=Otaniemi%20%2F%20Erityiset%20kokoushuoneet%7C%7C%25&guest=&lang=fin&ss_ttkal=&ctila=26543){:target="_blank"} and CNC machine share booking times so that vibrations do not disturb recordings.
 
-[Reservations from here.](https://takeout.aalto.fi/606028){:target="_blank"}
+[Login to Aalto Takeout to reserve this machine.](https://takeout.aalto.fi/606028){:target="_blank"}
 
 {% raw %} <iframe src="https://takeout.aalto.fi/embed/606028"  width="100%" height="390" frameborder="0"></iframe> {% endraw %}
 

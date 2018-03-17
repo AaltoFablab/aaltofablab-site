@@ -16,6 +16,6 @@ specs: {Technology: 'FFF', Build Volume: '223 x 223 x 305 mm', Extruder: 'Single
 The Ultimaker 2 is seen by many as the benchmark standard for desktop Fused Filament Fabrication (FFF) 3D-Printers, producing good quality prints reliably out of the box. This extended version is great for taller prints, with a vertical build height of just over 300mm.
 
 
-[Login to takeout.aalto.fi/fablab to reserve this machine](https://takeout.aalto.fi/605971)
+[Login to takeout.aalto.fi/fablab to reserve this machine](https://takeout.aalto.fi/605971){:target="_blank"}
 
 {% raw %} <iframe src="https://takeout.aalto.fi/embed/605971" width="100%" height="390" frameborder="0" seamless="seamless"></iframe> {% endraw %}

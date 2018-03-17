@@ -17,6 +17,6 @@ specs: {Technology: 'FFF', Build Volume: '265 x 225 x 195 mm', Resolution: '50 m
 The ZYYX is currently setup to print with flexible materials.
 With it's fully enclosed build chamber and activated carbon air filter that absorbs bad smells that some materials can emit while printing, the ZYYX is marketed as a "fume free" printer. The ZYYX also has a fully automatic build plate calibration and leveling system, to ensure prints adhere to the platform well and are completed reliably.
 
-[To reserve the ZYYX Login to TAKEOUT.AALTO.FI/FABLAB](https://takeout.aalto.fi/606017){:target="_blank"}
+[Login to Aalto Takeout to reserve this machine.](https://takeout.aalto.fi/606017){:target="_blank"}
 
 {% raw %} <iframe src="https://takeout.aalto.fi/embed/606017" width="100%" height="390" frameborder="0"></iframe> {% endraw %}

@@ -16,6 +16,6 @@ specs: {Type: '4-Axis Mill', Working Volume: '305 x 305 x 105 mm', Tool Dia.: '0
 Slightly bigger than it's little brother, the [MDX-20](../machines/roland-mdx-20), the MDX-40 offers more power and a larger working volume. We also have a 4th-Axis attachment which allows parts to be turned and rotated automatically during a milling operation.
 
 
-[Login to takeout.aalto.fi/fablab to reserve this machine](https://takeout.aalto.fi/606030){:target="_blank"}
+[Login to Aalto Takeout to reserve this machine.](https://takeout.aalto.fi/606030){:target="_blank"}
 
 {% raw %} <iframe src="https://takeout.aalto.fi/embed/606030" width="100%" height="390" frameborder="0"></iframe> {% endraw %}

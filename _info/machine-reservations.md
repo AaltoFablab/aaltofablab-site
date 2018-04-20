@@ -6,12 +6,7 @@ categories:
   - "howItWorks"
 ---
 
-Aalto Students, Staff and Researchers can reserve machines via email using their @aalto.fi email address.
-
-To reserve a machine:
-
-1. Check the availability of the machine you wish to use from our [Lab Page](../lab).
-2. Once you have found a suitable time-slot, send an email to [fablab@aalto.fi](mailto:fablab@aalto.fi) including the machine, date and time you would like to reserve and any relevant other details about your project.
-3. We will get back to you as soon as we can to confirm your reservation, or suggest an alternative.
+Aalto Students, Staff and Researchers can reserve machines via [takeout.aalto.fi/fablab](https://takeout.aalto.fi).
+The Fablab machines are available to everyone on the Public Open Days every Thursday from 12:00 - 16:00, during which times the machines are available on a first-come, first served basis.
 
 \*Although the machine you wish to use may be available according to the schedules, we have to make sure there are enough skills in the Lab to supervise all activities at any given time. For this reason, we may suggest an alternative time to make sure you get the level of attention needed...

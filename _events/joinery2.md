@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Japanese Wood Joinery Workshop
-date: 2017-03-22 12:00:00 +0000
+date: 2017-06-14 12:30:00 +0000
 categories:
 - events
 - public

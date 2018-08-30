@@ -10,11 +10,15 @@ categories:
   Aalto Fablab
 </div>
 <div class="info--map-text">
-  Harald Herlin Learning Centre<br/>
-  Otaniementie 9<br/>
-  Espoo<br/>
+  Aalto Studios<br/>
+  Otakaari 7<br/>
+  02150 Espoo<br/>
   Finland
+  Europe
+  Planet Earth
+  Milky Way
+  
 </div>
 <div class="info--map-button">
-  <a href="https://maps.google.com?daddr=Otaniementie+9+Espoo+Finland" class="shadow" target="_blank">Get Directions</a>
+  <a href="https://www.google.com/maps/place/Magnethuset,+Otakaari+7" class="shadow" target="_blank">Get Directions</a>
 </div>

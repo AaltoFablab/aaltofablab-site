@@ -12,7 +12,7 @@ We offer non-military service position for a design oriented person at Aalto Fab
 
 The applicant should have some knowledge about digital design and digital manufacturing tools (3D-printer, CNC milling machine, laser cutter etc). The non-military servant will assist the workshop master of Aalto Fablab in daily work. The working language is mainly English so the applicant should have good oral and written communication skills in English language.
 
-Please send your short application with a CV to Solomon Embafrash by 15th of July 2017. More information from Solomon Embafrash.
+Please send your short application with a CV to Solomon Embafrash by 15th of July 2018. More information from Solomon Embafrash.
 
 Firstname.lastname@aalto.fi, +358 50 5933203
 [https://vipa.mol.fi/sivariweb_public/pages/servplace_info.jsf?id=538841](https://vipa.mol.fi/sivariweb_public/pages/servplace_info.jsf?id=538841)

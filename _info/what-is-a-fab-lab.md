@@ -6,7 +6,7 @@ categories:
   - "aboutFabLabs"
 ---
 
-Aalto Fablab is part of a global network of [1000+ Fab Labs](http://www.fablabs.io/map){:target="_blank"}.
+Aalto Fablab is part of a global network of [1000+ Fab Labs](https://www.fablabs.io/labs){:target="_blank"}.
 
 A Fab Lab is a technology prototyping platform where learning, experimentation, innovation and invention are encouraged through curiosity, creativity, hands-on making and crucially through open knowledge sharing.
 

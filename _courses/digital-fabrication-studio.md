@@ -19,3 +19,7 @@ oodiLink: https://oodi.aalto.fi/a/opintjakstied.jsp?OpinKohd=1116993234
 ---
 
 Digital Fabrication looks into the world of Fab Labs and maker-spaces, how to develop ideas, prototype and iterate using Digital Fabrication Tools. 3D-Printing, Computer-Controlled Cutting, CNC Machining and Programmable Electronics using Arduino and Raspberry Pi will be covered, and you will develop your own project using what you have learnt.
+
+
+
+<!-- // !!!!!! name changed from digital-fabrication-studio.md to DFS.md to remove from website -->

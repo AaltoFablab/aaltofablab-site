@@ -1,0 +1,121 @@
+
+<html>
+<header>
+<title>Printers - Fablab</title>    
+    
+</header>
+    
+    
+<style>
+    
+ .wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.align{
+    margin-top: 5%;
+}
+
+
+
+.center{
+        display:block;
+        align-items: right;
+        height: auto;
+        width:100%;
+        margin: 40px 20px;
+    }
+    
+    body{
+        background-image: url("images/stars.jpg");
+    }
+    img{
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */}
+    
+ .wrapper a:hover {
+    font-weight: normal;
+    color: #000000;
+ }    
+ .wrapper a:hover img{
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: none ; /* IE6-9 */
+    zoom:1; /* needed to trigger "hasLayout" in IE if no width or height is set */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    }
+    
+  .wrapper a{        
+        color: #aaaaaa;
+        font-family: helvetica;
+        text-align: center;
+        text-decoration: none;
+  }  
+.wrapper {
+  align-content: center;
+    text-align: center;
+  display: block;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(300px, auto);
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+.two { 
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+.four {
+  grid-column: 4;
+  grid-row: 1;
+}
+.five {
+  grid-column: 5;
+  grid-row: 1;
+}
+ .six {
+  grid-column: 2;
+  grid-row: 2;
+}
+.seven {
+  grid-column: 3;
+  grid-row: 2;
+}
+.eight {
+  grid-column: 4;
+  grid-row: 2;
+}
+</style>
+    <body>
+        <div class="center1"> <div class="center"><img width="200px" height="auto" src="images/fablabLogoWhite.gif"/></div></div>
+        <div class="align">
+  <div class="wrapper">
+  <div class="one" ><a href="http://193.167.5.231" target="_blank"><img width="200px" height="auto" src="images/tardis.png"/> <br>Tardis: Nr 1</a></div>
+  <div class="two">  <a href="http://193.167.5.232" target="_blank"><img width="200px" height="auto" src="images/spok.png" /> <br>Spok: Nr 2</a></div>
+
+ 
+  <div class="three"><a href="http://193.167.5.233" target="_blank"><img width="200px" height="auto" src="images/r2d2.png" /> <br>R2D2: Nr 3 </a></div>
+  <div class="four"> <a href="http://193.167.5.234" target="_blank"><img width="200px" height="auto" src="images/Chewy.png"/> <br>Chewbacca: Nr 4</a></div>
+ <div class="five"> <a href="http://193.167.5.235" target="_blank"><img width="200px" height="auto" src="images/mrHankeyOut.png" /> <br>Mr Hankey: Nr 5</a></div>
+ <div class="six"> <a href="http://193.167.5.236" target="_blank"><img width="200px" height="auto" src="images/taz6.png" /> <br>asdf: Nr 6</a></div>
+<div class="seven"> <a href="http://193.167.5.237" target="_blank"><img width="200px" height="auto" src="images/taz6.png" /> <br>Morty: Nr 7</a></div>
+<div class="eight"> <a href="http://193.167.5.238" target="_blank"><img width="200px" height="auto" src="images/ultimaker.png" /> <br>Rick: Nr 8</a></div>
+</div>
+        </div>
+</body>
+</html>

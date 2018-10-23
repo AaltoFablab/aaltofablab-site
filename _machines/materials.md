@@ -16,4 +16,4 @@ We hold a stock of commonly used sheet materials and 3D-printer consumables avai
 
 Unfortunately, as our stock is limited, our materials are sold for use in the Fablab with our machines and not external workshops.
 
-[Material Prices can be found here](https://github.com/AaltoFablab/aaltofablab-site/blob/master/img/uploads/Materialprices.jpg). Not all items are necessarily in stock. 
+[Material Prices can be found here](/img/uploads/Materialprices.jpg). Not all items are necessarily in stock. 

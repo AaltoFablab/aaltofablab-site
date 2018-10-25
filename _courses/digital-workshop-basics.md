@@ -19,3 +19,11 @@ oodiLink: https://oodi.aalto.fi/a/opintjakstied.jsp?OpinKohd=1130969425&haettuOp
 ---
 
 Learn the basics of 3D-Printing, Computer-Controlled Cutting, CNC Machining and Programmable Electronics in this hands on intro course. Digital Workshop Basics covers everything you need to start working with the Digital Fabrications tools found in 1000+ Fab Labs across the globe.
+
+| Course  |  Date |
+|:-:|:-:|
+|(H02) Digital Workshop Basics   | 30.10.18 -27.11.18	ti 13.00-16.00  |
+|(H02) Digital Workshop Basics   | 08.01.19 -05.02.19	ti 13.00-16.00  |
+|(H02) Digital Workshop Basics   | 26.02.19 -26.03.19	ti 13.00-16.00  |
+
+[OODI link](https://oodi.aalto.fi/a/opintjakstied.jsp?OpinKohd=1130969425&haettuOpas=-1)

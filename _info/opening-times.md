@@ -17,7 +17,7 @@ categories:
 </div>
 
 <div class="info--contact-text">
-CURRENTLY NOT ALL OF THE MACHINES ARE OPERATIONAL, PLEASE CHECK AVAILABILITY VIA (https://takeout.aalto.fi/fablab)[https://takeout.aalto.fi/fablab] (even if you don't have permissions for reservations). 
+CURRENTLY NOT ALL OF THE MACHINES ARE OPERATIONAL, PLEASE CHECK AVAILABILITY VIA [https://takeout.aalto.fi/fablab] (https://takeout.aalto.fi/fablab) (even if you don't have permissions for reservations). 
 </div>
 
 <div class="info--contact-button">

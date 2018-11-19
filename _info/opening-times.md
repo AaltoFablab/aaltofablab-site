@@ -8,11 +8,11 @@ categories:
 
 <div markdown="1" class="info--contact-times">
 
-| MONDAY  10:00&emsp;—&emsp;16:00 |
-| TUESDAY 10:00&emsp;—&emsp;16:00 | 
-| WEDNESDAY CLOSED | 
-| THURSDAY 12:00&emsp;—&emsp;18:00 | 
-| FRI  9:00&emsp;—&emsp;14:00  | 
+| MONDAY    10:00&emsp;—&emsp;16:00&emsp;|
+| TUESDAY   10:00&emsp;—&emsp;16:00&emsp;| 
+| WEDNESDAY &emsp;&emsp;CLOSED&emsp;&emsp;| 
+| THURSDAY  12:00&emsp;—&emsp;18:00&emsp;| 
+| FRIDAY    09:00&emsp;—&emsp;14:00&emsp;| 
 
 </div>
 

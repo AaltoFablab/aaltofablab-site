@@ -108,7 +108,9 @@
 
   .wrapper a:hover {
     font-weight: normal;
-    color: #000000;
+    color: #ffffff;
+    transform: scale(0.99);
+    transition: all .1s ease-out;
   }
 
   .wrapper a:hover img {

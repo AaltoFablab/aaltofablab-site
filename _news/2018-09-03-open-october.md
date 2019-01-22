@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Open in October 2018
-date: 2018-09-03 T12:30.821Z
+date: 2018-09-03T12:30.821Z
 categories:
   - "news"
 

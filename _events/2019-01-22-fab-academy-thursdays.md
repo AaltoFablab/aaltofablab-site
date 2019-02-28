@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fab Academy Thursdays"
-date: 2019-01-25 16:00:00 +2000
+date: 2019-01-24 16:00:00 +2000
 categories:
   - events
   - public

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fab Academy Fridays"
+title: "Fab Academy Thursdays"
 date: 2019-01-25 16:00:00 +2000
 categories:
   - events
@@ -19,4 +19,4 @@ tags:
   - "#cad"
 ---
 
-Join Fab Academy Fridays at the Aalto Fablab and learn in parallel with the Fab Academy! You will learn web basics, git version control, cad modelling, pcb design and production, cnc milling and more. Get introduced and join Fab Academy at the Aalto Fablab next year!
+Join Fab Academy Thursdays at the Aalto Fablab and learn in parallel with the Fab Academy! You will learn web basics, git version control, cad modelling, pcb design and production, cnc milling and more. Get introduced and join Fab Academy at the Aalto Fablab next year!

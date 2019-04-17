@@ -7,7 +7,7 @@ categories:
   - public
 startTime: "16:00"
 endTime: "18:00"
-facebookEvent: "https://www.facebook.com/events/607267159723036/"
+facebookEvent: "https://www.facebook.com/events/1016295205425403/"
 tags:
   - "@aaltofablab"
   - "#cnc"

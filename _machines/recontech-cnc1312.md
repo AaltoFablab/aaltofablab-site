@@ -1,7 +1,7 @@
 ---
 layout: machine
 nav: light
-name: Excitech CNC 1312
+name: Recontech CNC 1312
 sub: 3-Axis CNC Router
 categories:
   - machines

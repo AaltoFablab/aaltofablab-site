@@ -1,4 +1,7 @@
 # aaltofablab-site
+
+**Warning!** The repository has moved to internal Aalto servers. This repo will be here still for a month or so. Then it will be purged.
+
 This is the source for Aalto Fablab's website http://fablab.aalto.fi
 
 The code is open source under the [MIT License](https://github.com/AaltoFablab/aaltofablab-site/blob/master/LICENSE) - feel free to see how we've built the site, learn from it and share onwards.
